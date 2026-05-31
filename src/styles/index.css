@@ -1,0 +1,19 @@
+/* Leaflet core + plugin styles, then the ported legacy look-and-feel.
+   @import rules must come before any other statement (incl. @tailwind). */
+@import 'leaflet/dist/leaflet.css';
+@import './leaflet-sidebar.css';
+@import './coordinates.css';
+@import './legacy.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
