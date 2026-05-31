@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import { Marker, Popup } from 'react-leaflet';
 import gameData from '../data/markers.json';
+import extraData from '../data/extraMarkers.json';
 import treasureData from '../data/treasureMarkers.json';
 import type { GameMarker, TreasureMarker } from '../data/types';
 import { getMarkerIcon } from '../lib/icons';
@@ -9,7 +10,8 @@ import { markerKey, type VisitedMap } from '../lib/visited';
 import GamePopup from './popups/GamePopup';
 import TreasurePopup from './popups/TreasurePopup';
 
-const GAME_MARKERS = gameData as GameMarker[];
+// Original converted markers plus community-contributed additions.
+const GAME_MARKERS = [...(gameData as GameMarker[]), ...(extraData as GameMarker[])];
 const TREASURE_MARKERS = treasureData as TreasureMarker[];
 
 // Visited markers stay visible but fade back so they read as "done".
@@ -36,6 +38,7 @@ export default function GameMarkerLayer({ visible, visited, onToggleVisited }: P
             position={markerLatLng(marker.coords)}
             icon={getMarkerIcon(marker.icon)}
             opacity={visitedAt ? VISITED_OPACITY : 1}
+            keyboard={false}
           >
             <Popup>
               <GamePopup marker={marker} visitedAt={visitedAt} onToggleVisited={() => onToggleVisited(key)} />
@@ -52,6 +55,7 @@ export default function GameMarkerLayer({ visible, visited, onToggleVisited }: P
             position={markerLatLng(marker.coords)}
             icon={getMarkerIcon(marker.icon)}
             opacity={visitedAt ? VISITED_OPACITY : 1}
+            keyboard={false}
           >
             <Popup>
               <TreasurePopup marker={marker} visitedAt={visitedAt} onToggleVisited={() => onToggleVisited(key)} />

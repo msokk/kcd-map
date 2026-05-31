@@ -13,7 +13,12 @@ export default function UserMarkerLayer({ markers, onUpdate, onRemove }: Props) 
   return (
     <>
       {markers.map((marker) => (
-        <Marker key={marker.id} position={[marker.lat, marker.lng]} icon={getPaletteIcon(marker.iconValue)}>
+        <Marker
+          key={marker.id}
+          position={[marker.lat, marker.lng]}
+          icon={getPaletteIcon(marker.iconValue)}
+          keyboard={false}
+        >
           <Popup>
             <UserMarkerPopup marker={marker} onUpdate={onUpdate} onRemove={onRemove} />
           </Popup>

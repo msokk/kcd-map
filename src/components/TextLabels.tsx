@@ -38,7 +38,7 @@ export default function TextLabels({ show }: { show: boolean }) {
       {TEXT_MARKERS.map((marker, i) => {
         const { key, text } = parseMarkerName(marker.name);
         return (
-          <Marker key={i} position={textLatLng(marker.coords)} icon={transparentIcon} opacity={0}>
+          <Marker key={i} position={textLatLng(marker.coords)} icon={transparentIcon} opacity={0} keyboard={false}>
             <Tooltip permanent direction="top" className="text-label" offset={[0, 0]}>
               <span data-i18n={key} style={{ fontSize: `${fontSize}px` }}>
                 {text}

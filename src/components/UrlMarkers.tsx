@@ -62,7 +62,7 @@ export default function UrlMarkers({ onAdd }: Props) {
   if (!shared) return null;
 
   return (
-    <Marker position={[shared.lat, shared.lng]} icon={getPaletteIcon(shared.iconValue)}>
+    <Marker position={[shared.lat, shared.lng]} icon={getPaletteIcon(shared.iconValue)} keyboard={false}>
       <Popup>
         <div className="popcontent">
           <p className="mtitle">{shared.title}</p>

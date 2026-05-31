@@ -34,7 +34,10 @@ export default function AddMarker({ onAdd }: Props) {
   }, []);
 
   useMapEvents({
-    click(e) {
+    contextmenu(e) {
+      // Right-click to place a custom marker. Suppress the browser menu and
+      // ignore right-clicks that land inside an open popup.
+      e.originalEvent.preventDefault();
       if (fromPopup.current) {
         fromPopup.current = false;
         return;
