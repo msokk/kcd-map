@@ -3,6 +3,7 @@
 @import './leaflet-sidebar.css';
 @import './coordinates.css';
 @import './legacy.css';
+@import './app.css';
 
 html,
 body,

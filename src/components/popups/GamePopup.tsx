@@ -3,8 +3,15 @@ import type { GameMarker } from '../../data/types';
 import { parseMarkerName, humanizeItem } from '../../i18n';
 import { shareCoords, shareUrl } from '../../lib/geo';
 import CopyLinkButton from '../CopyLinkButton';
+import VisitedControl from '../VisitedControl';
 
-export default function GamePopup({ marker }: { marker: GameMarker }) {
+interface Props {
+  marker: GameMarker;
+  visitedAt?: number;
+  onToggleVisited: () => void;
+}
+
+export default function GamePopup({ marker, visitedAt, onToggleVisited }: Props) {
   const { t } = useTranslation();
   const { key, text } = parseMarkerName(marker.name);
   const name = t(key, { defaultValue: text });
@@ -30,6 +37,7 @@ export default function GamePopup({ marker }: { marker: GameMarker }) {
         {c0.toFixed(0)},{c1.toFixed(0)}
       </p>
       <CopyLinkButton url={url} />
+      <VisitedControl visitedAt={visitedAt} onToggle={onToggleVisited} />
     </>
   );
 }

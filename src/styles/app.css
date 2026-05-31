@@ -1,0 +1,40 @@
+/* Styles for features added in the rebuild (kept separate from the ported
+   legacy stylesheet). */
+
+/* "Mark as visited" control in marker popups */
+.visit-marker {
+  display: block;
+  width: auto;
+  margin: 6px auto 2px;
+  padding: 4px 12px;
+  font-family: 'MedievalSharpBook';
+  font-weight: bold;
+  font-size: 13px;
+  color: #fff;
+  background: #4e9006;
+  border: 1px solid #2f5405;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.visit-marker:hover {
+  background: #5aa80a;
+}
+.visit-marker.undo {
+  background: #8a6a3a;
+  border-color: #5c4623;
+}
+.visit-marker.undo:hover {
+  background: #9c7942;
+}
+.visited-block {
+  text-align: center;
+  margin-top: 6px;
+}
+.visited-on {
+  display: block;
+  font-family: 'MedievalSharpBook';
+  font-weight: bold;
+  font-size: 11px;
+  color: #4c2900;
+  margin-bottom: 2px;
+}

@@ -9,6 +9,7 @@ import {
   saveUserMarkers,
   createUserMarker,
 } from './lib/userMarkers';
+import { loadVisited, saveVisited, type VisitedMap } from './lib/visited';
 import type { UserMarker } from './data/types';
 
 const ALL_GROUP_IDS = [...CATEGORIES.map((c) => c.id), ...EXTRA_GROUPS];
@@ -19,8 +20,19 @@ export default function App() {
   const [visibleList, setVisibleList] = usePersistedState<string[]>('kcdVisibleGroups', []);
   const [userVisible, setUserVisible] = usePersistedState<boolean>('kcdUserVisible', true);
   const [userMarkers, setUserMarkers] = useState<UserMarker[]>(() => loadUserMarkers());
+  const [visited, setVisited] = useState<VisitedMap>(() => loadVisited());
 
   const visible = useMemo(() => new Set(visibleList), [visibleList]);
+
+  const toggleVisited = useCallback((key: string) => {
+    setVisited((prev) => {
+      const next = { ...prev };
+      if (next[key]) delete next[key];
+      else next[key] = Date.now();
+      saveVisited(next);
+      return next;
+    });
+  }, []);
 
   const toggleCategory = useCallback(
     (id: string, checked: boolean) => {
@@ -74,6 +86,7 @@ export default function App() {
   const exportMarkers = useCallback(() => {
     const backup = {
       markers: JSON.stringify(userMarkers),
+      visited: JSON.stringify(visited),
       langactive: i18n.language,
     };
     const href = `data:text/javascript;charset=utf-8;base64,${btoa(JSON.stringify(backup))}`;
@@ -85,7 +98,7 @@ export default function App() {
     document.body.appendChild(link);
     link.click();
     link.remove();
-  }, [userMarkers, i18n.language]);
+  }, [userMarkers, visited, i18n.language]);
 
   const importMarkers = useCallback(
     (file: File) => {
@@ -98,6 +111,13 @@ export default function App() {
           // Round-trip through the loader so legacy backup shapes normalize.
           localStorage.setItem('mapUserMarkers', JSON.stringify(parsed));
           setUserMarkers(loadUserMarkers());
+          if (text.visited) {
+            const v = typeof text.visited === 'string' ? JSON.parse(text.visited) : text.visited;
+            if (v && typeof v === 'object') {
+              saveVisited(v as VisitedMap);
+              setVisited(v as VisitedMap);
+            }
+          }
           if (text.langactive) void i18n.changeLanguage(text.langactive);
         } catch {
           alert('Failed to load file');
@@ -135,6 +155,8 @@ export default function App() {
         showTextLabels={visible.has(TEXT_LABELS_ID)}
         userVisible={userVisible}
         userMarkers={userMarkers}
+        visited={visited}
+        onToggleVisited={toggleVisited}
         onAddUserMarker={addUserMarker}
         onUpdateUserMarker={updateUserMarker}
         onRemoveUserMarker={removeUserMarker}

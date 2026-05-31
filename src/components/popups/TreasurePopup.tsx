@@ -3,8 +3,15 @@ import type { TreasureMarker } from '../../data/types';
 import { parseMarkerName, humanizeItem } from '../../i18n';
 import { shareCoords, shareUrl } from '../../lib/geo';
 import CopyLinkButton from '../CopyLinkButton';
+import VisitedControl from '../VisitedControl';
 
-export default function TreasurePopup({ marker }: { marker: TreasureMarker }) {
+interface Props {
+  marker: TreasureMarker;
+  visitedAt?: number;
+  onToggleVisited: () => void;
+}
+
+export default function TreasurePopup({ marker, visitedAt, onToggleVisited }: Props) {
   const { t } = useTranslation();
   const { key, text } = parseMarkerName(marker.name);
   const name = t(key, { defaultValue: text });
@@ -44,6 +51,7 @@ export default function TreasurePopup({ marker }: { marker: TreasureMarker }) {
         {c0},{c1}
       </p>
       <CopyLinkButton url={url} />
+      <VisitedControl visitedAt={visitedAt} onToggle={onToggleVisited} />
     </>
   );
 }

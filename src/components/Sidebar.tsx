@@ -155,6 +155,7 @@ export default function Sidebar({
           </span>
           <p className="list-title">{t('ImportExportmarkers')}</p>
           <div className="content mtop15px">
+            <p className="text">{t('backup_note')}</p>
             <a className="btn backupls" href="#" onClick={(e) => { e.preventDefault(); onExport(); }}>
               <i className="export" />
               <span className="btn-text">{t('export_markers')}</span>

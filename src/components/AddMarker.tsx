@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Popup, useMapEvents } from 'react-leaflet';
 import { useTranslation } from 'react-i18next';
 import type { UserMarker } from '../data/types';
@@ -17,11 +17,21 @@ export default function AddMarker({ onAdd }: Props) {
   const [title, setTitle] = useState('Arrow');
   const [desc, setDesc] = useState('');
   const [iconValue, setIconValue] = useState(0);
-  // Set on pointerdown inside the popup. Leaflet fires its map `click` after a
+  // Set on pointerdown inside any popup. Leaflet fires its map `click` after a
   // delay (to detect double-clicks), by which point a button click may already
-  // have re-rendered the popup, so a DOM-target check is unreliable. The flag
-  // is set before that deferred click, letting us skip the reset.
+  // have re-rendered the popup, so checking the click target is unreliable.
+  // Capturing pointerdown records the real origin before that deferred click,
+  // so a click inside a popup never opens the add-marker popup.
   const fromPopup = useRef(false);
+
+  useEffect(() => {
+    const onPointerDown = (e: PointerEvent) => {
+      const target = e.target as HTMLElement | null;
+      fromPopup.current = !!target?.closest('.leaflet-popup');
+    };
+    document.addEventListener('pointerdown', onPointerDown, true);
+    return () => document.removeEventListener('pointerdown', onPointerDown, true);
+  }, []);
 
   useMapEvents({
     click(e) {
@@ -54,7 +64,6 @@ export default function AddMarker({ onAdd }: Props) {
       autoClose={false}
       eventHandlers={{ remove: () => setPos(null) }}
     >
-      <div onPointerDownCapture={() => { fromPopup.current = true; }}>
       {stage === 'info' ? (
         <>
           <span className="coordsinfo">
@@ -112,7 +121,6 @@ export default function AddMarker({ onAdd }: Props) {
           </button>
         </form>
       )}
-      </div>
     </Popup>
   );
 }

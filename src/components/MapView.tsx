@@ -18,6 +18,7 @@ import UserMarkerLayer from './UserMarkerLayer';
 import AddMarker from './AddMarker';
 import UrlMarkers from './UrlMarkers';
 import type { UserMarker } from '../data/types';
+import type { VisitedMap } from '../lib/visited';
 
 const TILE_BOUNDS: LatLngBoundsExpression = [
   [0, 0],
@@ -33,6 +34,8 @@ interface Props {
   showTextLabels: boolean;
   userVisible: boolean;
   userMarkers: UserMarker[];
+  visited: VisitedMap;
+  onToggleVisited: (key: string) => void;
   onAddUserMarker: (input: Omit<UserMarker, 'id'>) => UserMarker;
   onUpdateUserMarker: (id: string, patch: Partial<UserMarker>) => void;
   onRemoveUserMarker: (id: string) => void;
@@ -43,6 +46,8 @@ export default function MapView({
   showTextLabels,
   userVisible,
   userMarkers,
+  visited,
+  onToggleVisited,
   onAddUserMarker,
   onUpdateUserMarker,
   onRemoveUserMarker,
@@ -59,6 +64,7 @@ export default function MapView({
       maxBounds={MAX_BOUNDS}
       zoomControl={false}
       scrollWheelZoom={false}
+      closePopupOnClick={false}
     >
       <TileLayer
         url={TILES_URL}
@@ -71,7 +77,7 @@ export default function MapView({
       />
       <MapControls />
       <TextLabels show={showTextLabels} />
-      <GameMarkerLayer visible={visible} />
+      <GameMarkerLayer visible={visible} visited={visited} onToggleVisited={onToggleVisited} />
       {userVisible && (
         <UserMarkerLayer
           markers={userMarkers}
