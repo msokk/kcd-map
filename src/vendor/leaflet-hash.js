@@ -61,7 +61,7 @@
         this.map = null;
       },
       onMapMove: function () {
-        if (this.movingMap || !this.map._loaded) {
+        if (this.movingMap || !this.map || !this.map._loaded) {
           return false;
         }
         var hash = this.formatHash(this.map);
@@ -111,6 +111,7 @@
       },
       stopListening: function () {
         this.map.off("moveend", this.onMapMove, this);
+        this.map.off("zoom", this.onMapMove, this);
         if (HAS_HASHCHANGE) {
           L.DomEvent.removeListener(window, "hashchange", this.onHashChange);
         } else {
