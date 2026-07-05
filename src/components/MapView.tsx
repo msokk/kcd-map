@@ -17,6 +17,7 @@ import TextLabels from './TextLabels';
 import UserMarkerLayer from './UserMarkerLayer';
 import AddMarker from './AddMarker';
 import UrlMarkers from './UrlMarkers';
+import LivePlayerMarker from './LivePlayerMarker';
 import type { UserMarker } from '../data/types';
 import type { VisitedMap } from '../lib/visited';
 
@@ -87,6 +88,7 @@ export default function MapView({
       )}
       <AddMarker onAdd={onAddUserMarker} />
       <UrlMarkers onAdd={onAddUserMarker} />
+      <LivePlayerMarker />
     </MapContainer>
   );
 }

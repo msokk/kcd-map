@@ -38,3 +38,19 @@
   color: #4c2900;
   margin-bottom: 2px;
 }
+
+/* Live player marker tooltip (legacy.css makes .leaflet-tooltip transparent
+   for text labels, so this needs its own background) */
+.leaflet-tooltip.live-player-tooltip {
+  font-family: 'MedievalSharpBook';
+  font-weight: bold;
+  font-size: 12px;
+  color: #f4e4c1;
+  background-color: rgba(46, 33, 20, 0.92);
+  border: 1px solid #8a6a3a;
+  border-radius: 3px;
+  padding: 3px 8px;
+}
+.leaflet-tooltip-top.live-player-tooltip:before {
+  border-top-color: #8a6a3a;
+}
