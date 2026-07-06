@@ -8,4 +8,11 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 1500,
   },
+  server: {
+    // Live player position: forward to the bridge (live/bridge.ps1) or the
+    // packaged desktop app (app/main.ts), whichever is running.
+    proxy: {
+      '/position': 'http://localhost:8765',
+    },
+  },
 });

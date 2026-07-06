@@ -19,13 +19,22 @@ Shows Henry's live position on the map while KCD is running, via three pieces:
    toggle follow mode (on by default). The marker disappears when the bridge
    is unreachable or the game isn't running.
 
-## Run
+## Run (desktop app)
+
+`npm run app:build` builds the map and compiles a self-contained
+`kcd-live-map.exe` (Deno; map assets embedded). Running it serves everything
+on http://localhost:8765, tails kcd.log itself (no bridge needed), and opens
+an Edge app-mode window. Flags: `--port=N`, `--kcd=<install dir>` (or
+`KCD_PATH` env), `--no-open`.
+
+## Run (dev)
 
 ```powershell
 # 1. start the bridge (adjust -LogPath if KCD is installed elsewhere)
+#    (or run the desktop app / `npm run app:run` instead of the bridge)
 powershell -ExecutionPolicy Bypass -File live\bridge.ps1
 
-# 2. start the map
+# 2. start the map; Vite proxies /position to localhost:8765
 npm run dev
 
 # 3. launch the game; the arrow appears after the first position line is logged

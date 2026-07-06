@@ -1,11 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
 import { Marker, Tooltip, useMap } from 'react-leaflet';
 import L from 'leaflet';
+import { usePersistedState } from '../hooks/usePersistedState';
 
-// Live player position served by live/bridge.ps1, which tails kcd.log for
-// [LIVEMAP] lines written by the LiveMapTracker game mod. Coordinates are
+// Live player position from kcd.log ([LIVEMAP] lines written by the
+// LiveMapTracker game mod). Served same-origin by the desktop app
+// (app/main.ts); in dev the Vite proxy forwards it to whichever of
+// app/main.ts or live/bridge.ps1 is running on 8765. Coordinates are
 // in-game world meters, which this map uses natively (see lib/crs.ts).
-const BRIDGE_URL = 'http://localhost:8765/position';
+const BRIDGE_URL = '/position';
 const POLL_MS = 1000;
 const IDLE_POLL_MS = 10000; // slow down while the bridge is unreachable
 const STALE_AFTER_FAILS = 3;
@@ -39,7 +42,7 @@ function playerIcon(deg: number): L.DivIcon {
 export default function LivePlayerMarker() {
   const map = useMap();
   const [pos, setPos] = useState<LivePos | null>(null);
-  const [follow, setFollow] = useState(true);
+  const [follow, setFollow] = usePersistedState('livePlayerFollow', true);
   const failsRef = useRef(0);
 
   useEffect(() => {

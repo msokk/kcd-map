@@ -1,7 +1,9 @@
 node_modules
 dist
+dist-app
 dist-ssr
 *.local
+*.exe
 .DS_Store
 .vite
 
