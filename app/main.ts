@@ -27,7 +27,10 @@ const KCD_ROOT = args.get('--kcd') || Deno.env.get('KCD_PATH') ||
   'C:\\Program Files (x86)\\Steam\\steamapps\\common\\KingdomComeDeliverance';
 const LOG_PATH = `${KCD_ROOT}\\kcd.log`;
 const STATIC_ROOT = new URL('../dist-app/', import.meta.url);
-const APP_URL = `http://localhost:${PORT}/`;
+// 127.0.0.1, not localhost: the server binds IPv4 only, while localhost
+// resolves to ::1 first on Windows and Edge's IPv4 fallback is unreliable
+// on a fresh profile (page failed to load on first launch after rebuild).
+const APP_URL = `http://127.0.0.1:${PORT}/`;
 const LOCAL_APP_DATA = Deno.env.get('LOCALAPPDATA') ?? '.';
 const APP_LOG = `${LOCAL_APP_DATA}\\kcd-live-map.log`;
 
@@ -206,6 +209,7 @@ log(`starting: port=${PORT} kcd=${KCD_ROOT}`);
 let server: Deno.HttpServer | null = null;
 try {
   server = Deno.serve({
+    hostname: '127.0.0.1', // loopback only; nothing to offer the LAN
     port: PORT,
     onListen: () => log(`serving ${APP_URL} (tailing ${LOG_PATH})`),
   }, async (req) => {
