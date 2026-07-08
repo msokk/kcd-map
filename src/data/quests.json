@@ -1,0 +1,1031 @@
+[
+    {
+        "name":  "a_antiqueHooker",
+        "title":  "A Woman Scorned",
+        "desc":  "A woman who\u0027s seen better days is plying the oldest trade in the world outside the Inn in the Glade. She wants me to go thieving for her.",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "a_huntsman_alex",
+        "title":  "Beggars\u0027 Feast",
+        "desc":  "Alex, the leader of the Skalitz refugees, asked me to hunt down some game for them. That\u0027s poaching, but a man should help his neighbour.",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "a_landlord",
+        "title":  "Delicacies",
+        "desc":  "Andrew the innkeeper buys game. Hunting isn\u0027t exactly legal, but that\u0027s why there\u0027s plenty of coin in it!",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "a_huntsman_butcher",
+        "title":  "Fat Profits",
+        "desc":  "The Sasau butcher offered me an interesting job. I\u0027m to get him some game and he\u0027ll reward me generously. It\u0027s poaching, but a job\u0027s a job.",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "q_jealousGroom",
+        "title":  "Green-Eyed Monster",
+        "desc":  "A farmhand with a grievance wants to get revenge, and he wants my help to do it.",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "a_huntsman_chamberlain",
+        "title":  "Henry the Master Huntsman",
+        "desc":  "After I helped Hanekin Hare, I was honoured with the title of Talmberg Master Huntsman. Now I have to take care of the Talmberg woods and keep the noble tables supplied with good quality game.",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "a_camps3",
+        "title":  "Interlopers",
+        "desc":  "There are marauders roaming even the Sasau area and Sir Sebastian vom Berg needs help with them.",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "a_camps2",
+        "title":  "Raiders",
+        "desc":  "Cumans are pillaging around Talmberg, which Sir Divish is understandably upset about. So there\u0027s a generous bounty on their heads.",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "q_ratajTournament",
+        "title":  "Rattay Tourney ",
+        "desc":  "The glorious Rattay Tournament convened by Sir Hanush.",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "a_vagabund",
+        "title":  "Rob the Rich, Give to the Poor",
+        "desc":  "A scruffy vagabond from the refugee camp in Rattay wants me to do some pickpocketing for him.",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "a_camps",
+        "title":  "Ruin",
+        "desc":  "Bandits have settled in the vicinity of Rattay and are plundering the region. There\u0027s a generous bounty on their heads.",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "a_currier",
+        "title":  "Skin",
+        "desc":  "Brada the tanner wants animal hides. And he pays quite well for them.",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "q_activityswordtutorial",
+        "title":  "Swordplay",
+        "desc":  "",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "a_swordofsheba",
+        "title":  "The Queen of Sheba’s Sword",
+        "desc":  "The Sasau swordsmith told me some pilgrim wandering the area said he had come from Jerusalem and had been selling fragments he claimed came from the sacred sword of the Queen of Sheba. The swordsmith would like to get his hands on those fragments and he offered me a handsome reward for helping him to achieve that.",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "a_pesek_thievery",
+        "title":  "Thick as Thieves - Peshek",
+        "desc":  "Peshek the Miller is known to pack away not just bags of flour, but quite a few pilfered valuables from the Rattay townsfolk. He might have some work for me to do.",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "a_simon_thievery",
+        "title":  "Thick as Thieves - Simon",
+        "desc":  "Just like Peshek and Woyzeck, Simon too has an interest in “milling” a bit of extra business. I could help him out. ",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "a_vojtech_thievery",
+        "title":  "Thick as Thieves - Woyzeck",
+        "desc":  "Woyzeck is another miller making unlawful money on the side. He might have some work for me.",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "a_tournament_betting",
+        "title":  "Who Do You Like?",
+        "desc":  "Miller Peshek will take a wager on the tourney from me. ",
+        "type":  "activity",
+        "region":  "Activity"
+    },
+    {
+        "name":  "q_rides_bacchus",
+        "title":  "The Ring of Bacchus",
+        "desc":  "There\u0027s an interesting game that Kuno\u0027s men play to pass the time. There\u0027s a ring that goes around between them, called the Ring of Bacchus. Whoever has it when they\u0027re at the tavern can drink and eat his fill at Kuno\u0027s expense. The ring is a highly coveted item in the camp, so I thought I\u0027d join the game too.",
+        "type":  "activity",
+        "region":  "Band of Bastards"
+    },
+    {
+        "name":  "q_floatingArchery",
+        "title":  "Chumps on the River",
+        "desc":  "I met an interesting fellow. He’s an archer by the name of Vatzek and he told me about this game. It’s called “Chumps” and is about hitting logs floating down the river.",
+        "type":  "activity",
+        "region":  "Ledetchko"
+    },
+    {
+        "name":  "q_fightClub_rataje",
+        "title":  "Do Me a Favour - Punch Me!",
+        "desc":  "There\u0027s a brawler in Rattay who fights people for silver. Maybe I could beat a Groschen or two out of him.",
+        "type":  "activity",
+        "region":  "Rattay"
+    },
+    {
+        "name":  "q_pickpocket_training",
+        "title":  "Pickpocketing",
+        "desc":  "Miller Peshek promised to teach me how to pick pockets.",
+        "type":  "activity",
+        "region":  "Rattay"
+    },
+    {
+        "name":  "q_fightClub_skalice",
+        "title":  "Revenge of the Cuman King",
+        "desc":  "There\u0027s two strange men in Skalitz - one claims to be the spokesman for the Cuman king and that the second is allegedly His Majesty, though he doesn\u0027t look too regal... ",
+        "type":  "activity",
+        "region":  "Skalitz"
+    },
+    {
+        "name":  "q_fightClub_uzice",
+        "title":  "Fishy Business in Uzhitz",
+        "desc":  "The Uzhitz fisherman organises prize fights.",
+        "type":  "activity",
+        "region":  "Uzhitz"
+    },
+    {
+        "name":  "q_theresa_return",
+        "title":  "Aftermath",
+        "desc":  "Samuel died during the night and now I\u0027m left alone in the world but for Tinker. Has anyone else survived at all? Skalitz is smouldering and it looks like the army has moved on.",
+        "type":  "main",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_theresa_village",
+        "title":  "Ordinary Routine",
+        "desc":  "Village life is no fairy-tale. You have to be on your feet from dawn till dusk.",
+        "type":  "main",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_theresa_silver",
+        "title":  "The Family Silver",
+        "desc":  "A pair of Skalitz guards were at the mill asking about silver going missing from the mines. Pa looked like he was very worried, though he tried to cover it up.",
+        "type":  "main",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_theresa_escape",
+        "title":  "Thicker than Water",
+        "desc":  "Skalitz is under attack! Pa and Stibor were killed in front of my eyes, Zbyshek fled like a coward and left me to the mercy of the raiders. I managed to get away, but I\u0027m not out of danger yet. And neither is my little brother, Samuel, who works in the mines.",
+        "type":  "main",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_theresa_brother",
+        "title":  "Ties that Bind",
+        "desc":  "My brother is dying. I must find some way to save him, otherwise he won\u0027t survive till morning. And I\u0027ll have to be very careful, because all hell has broken loose outside...",
+        "type":  "main",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_theresa_nails",
+        "title":  "Unexpected Visit",
+        "desc":  "Yesterday\u0027s chores were anything but routine. Let\u0027s hope it\u0027s quieter today.",
+        "type":  "main",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_searchForSaint",
+        "title":  "A Needle in a Haystack",
+        "desc":  "A fellow is hiding in the Sasau monastery who I\u0027m supposed to find and kill. All I know about him is that he\u0027s one of the novices. ",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_counterfeiters",
+        "title":  "All that Glisters",
+        "desc":  "I found quite a pile of Groschen in the Pribyslavitz encampment, which Master Engineer Feyfar subsequently discovered to be fakes. Not only is that a capital crime against the Crown, but it\u0027s also proof that there\u0027s more going on around Rattay than meets the eye.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_conquest",
+        "title":  "An Oath is an Oath",
+        "desc":  "The men are prepared, the trebuchet built and Istvan refuses to surrender. Talmberg must be conquered by force!",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_awakeningInRattay",
+        "title":  "Awakening",
+        "desc":  "I woke up from bad dreams. Theresa, the Skalitz miller\u0027s daughter was sitting leaning over me. It turns out it was she, together with Sir Robard and his men, who saved my life. Then she took me to Rattay to uncle Peshek\u0027s mill. They looked after me the whole time I was delirious and feverish. Theresa also lost everything and is now living at her uncle\u0027s mill. I may stay there if I wish, but I have a debt to settle. My treatment was not without cost.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_pribBattle",
+        "title":  "Baptism of Fire",
+        "desc":  "A raiding party led by Captain Robard of Talmberg is preparing to attack the bandit camp and I\u0027m to go with them. It will be my baptism of fire.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_istvans_reinforcements",
+        "title":  "Cold Steel, Hot Blood",
+        "desc":  "A messenger galloped into Talmberg with a report that Istvan\u0027s reinforcements are approaching. A battle seems inevitable.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_epilogue",
+        "title":  "Epilogue",
+        "desc":  "Toth is gone and his men scattered, but there are still many things left unresolved. ",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_defence",
+        "title":  "Family Values",
+        "desc":  "Istvan didn\u0027t wait for the outcome of the skirmish, but took advantage of our departure and attacked the few men left guarding our trebuchet.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_neuhof_colliers",
+        "title":  "Ginger in a Pickle",
+        "desc":  "The Neuhof stud farm met with tragedy. A raiding party killed several horses and some people. The trail led me to suspect that someone from the farm may have been involved.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_returnToSkalitz",
+        "title":  "Homecoming",
+        "desc":  "Although my liege lord Sir Radzig Kobyla forbade me to leave Talmberg and the Lord of Talmberg, Sir Divish, complied with his wishes and tried to keep me in the castle, in the end I succeeded in leaving. I had to get back to Skalitz to bury my parents. I couldn\u0027t just leave their bodies to the dogs.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_recruiters",
+        "title":  "If You Can\u0027t Beat \u0027em",
+        "desc":  "After the affair of the counterfeiters, it\u0027s become clear that Sasau conceals many secrets. There\u0027s talk that there are \"crimps\", as they\u0027re called, recruiting men for a new bandit camp...",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_nightsWatch",
+        "title":  "Keeping the Peace",
+        "desc":  "In order to become one of Sir Radzig\u0027s men, I had to enter the service of the Bailiff of Rattay. He wants me to serve on sentry duty with Nightingale the watchman.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_samopesh",
+        "title":  "My Friend Timmy",
+        "desc":  "I found out from Reeky that another of the bandits who raided Neuhof is apparently hiding out in a windmill south of Merhojed. ",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_auschitz",
+        "title":  "Mysterious Ways",
+        "desc":  "Ginger is hiding out in the woods in fear of his life, because by chance he recognised one of the bandits involved in the Neuhof massacre, some fellow with a limp who lives in Uzhitz.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_pribyslav",
+        "title":  "Nest of Vipers",
+        "desc":  "Sir Radzig asked me to scout out the location of the camp where the bandits who attacked Neuhof are holed up. I\u0027ve got to find out as much as I can about the camp and, if possible, sabotage things a bit.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_night_rescue",
+        "title":  "Night Raid",
+        "desc":  "A decision was reached to try once more to sneak into the castle and free the hostages.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_ledecko",
+        "title":  "On the Scent",
+        "desc":  "One of the members of the Neuhof gang, a fellow who goes by the moniker of Reeky, should be somewhere in the vicinity of Ledetchko. Unfortunately, that\u0027s about all I could find out so far. I expect it shouldn\u0027t be too hard to... well, catch scent of this Reeky, though I don\u0027t expect it will be a pleasant encounter.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_talmberkBarbican",
+        "title":  "Out of the Frying Pan",
+        "desc":  "The victory in Vranik may have been for nothing. Istvan Toth and some of his men managed to slip away before our assault and head for Talmberg, which was left undefended. The foe has taken cover behind the castle walls, but we still have a chance to win the day.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_counterOffensive",
+        "title":  "Payback",
+        "desc":  "We finally tracked down the nest of vipers and now it\u0027s time to crush the head of the biggest and most venomous of them with our heels.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_enteringTheMonastery",
+        "title":  "Poverty, Chastity and Obedience",
+        "desc":  "I discovered that the only way to the monastery leads through a young nobleman, who is supposed to join the monks\u0027 ranks. ",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_captiveInMerhojed",
+        "title":  "Questions and Answers",
+        "desc":  "While we were battling in Pribyslavitz, another gang of bandits attacked Merhojed. However, the villagers not only held off the raiders, but even took one captive. Sir Radzig wants me to interrogate him.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_konradKyeser",
+        "title":  "Rocketeer",
+        "desc":  "For the conquest of Talmberg you need to build a trebuchet. This is more difficult than may seem at first glance.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_escapeToTalmberk",
+        "title":  "Run!",
+        "desc":  "My home town was attacked by foreign soldiers and many people slaughtered. I couldn\u0027t get inside the castle before they closed the gates, so they sent me to Talmberg to warn the people there in case they faced a similar fate.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_talmberkPrepare",
+        "title":  "Siege",
+        "desc":  "None of our attacks succeeded and Talmberg remained in Istvan’s hands. Several camps sprung up around the castle and they all had to be got up and running.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_infiltrationAndCapture",
+        "title":  "The Die is Cast",
+        "desc":  "My spiritual contemplation in the Order of St. Benedict is over. Farewell, Brother Gregor! Now, back to those crimps - let\u0027s hope they finally lead me to the bandit encampment.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_massacre",
+        "title":  "The Hunt Begins",
+        "desc":  "Someone raided the Neuhof stud farm and Sir Radzig has sent me there along with a squad of his men to investigate what actually happened.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_huntPtacek",
+        "title":  "The Prey",
+        "desc":  "In the course of my training I had the honour of making the acquaintance of Sir Hans Capon, and we didn\u0027t get off to a very good start; we ended up brawling in the tavern. Sir Hanush is punishing both of us by sending us hunting together. It was clear that neither one of us was looking forward to the expedition.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_basicTraining",
+        "title":  "Train Hard, Fight Easy",
+        "desc":  "Sir Radzig wants me to undertake training with his Captain, Sir Bernard. He has a reputation for being gruff, and I\u0027m not sure whether he\u0027ll be too happy about Sir Radzig taking me, a blacksmith\u0027s son, into his service.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_skalitz",
+        "title":  "Unexpected Visit",
+        "desc":  "We finally got some fine spring weather, but still I slept late in the morning, because I was out celebrating until late in the evening. It was a bit hard getting out of bed in the morning.",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_revenge",
+        "title":  "Vengeance",
+        "desc":  "My home was destroyed, my parents and my sweetheart murdered. I fled like a coward and only survived by a miracle. And when I tried to do the right thing and at least bury my loved ones, I lost the last thing my father left me - the sword he forged for Sir Radzig. But I will never run again, ever! I\u0027ll find that bastard who led the raid on Skalitz and kill him. And I\u0027ll find that thieving rat who took my sword and run him through with it!",
+        "type":  "main",
+        "region":  "Main story"
+    },
+    {
+        "name":  "q_theresa_henryLevel",
+        "title":  "A Woman\u0027s lot",
+        "desc":  "When Henry asked Theresa what happened to her and her family in Skalitz, she started telling him a long, sad story...",
+        "type":  "side",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_theresa_survivors",
+        "title":  "Angel of Mercy",
+        "desc":  "I came across a survivor and decided to help others to escape too. No one else should be allowed to die! Tinker will help with my search.",
+        "type":  "side",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_dlc_revelation_treasure",
+        "title":  "Bonum Commune",
+        "desc":  "The repentant sinner Pavel of Kolin wanted to recover his hidden treasure and donate it to a good cause in Sasau. I decided to help him.",
+        "type":  "side",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_dlc_revelation_gambler",
+        "title":  "Casting Lots",
+        "desc":  "Johanka wanted me to help the Sasau tailor\u0027s wife by getting her husband to stop playing dice.",
+        "type":  "side",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_theresa_blanka",
+        "title":  "Cry Wolf!",
+        "desc":  "Bianca wants to brew something special for Henry and she needs to pick herbs in the woods for it. The trouble is, people are saying a wolf was seen in the woods recently...",
+        "type":  "side",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_dlc_revelation_adela",
+        "title":  "Go, and Sin No More",
+        "desc":  "Johanka sent me to Ledetchko to find a sinful bath wench and redeem her.",
+        "type":  "side",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_dlc_revelation_murderer",
+        "title":  "Infernal Dream",
+        "desc":  "I talked to Johanka at the infirmary in Sasau Monastery. She\u0027s quite exhausted - apart from having to care for the sick and wounded with little help from anyone, she said she\u0027s also been troubled by a repeated nightmare about some cave in the hills above Skalitz. I promised her I\u0027d find this cave and have a look inside.",
+        "type":  "side",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_theresa_johanka",
+        "title":  "Matchmaker",
+        "desc":  "Johanka wants Matthias to take her dancing, but she\u0027s too shy to ask him. So, she thought up an elaborate plan to prompt him... and I\u0027m to play a major role in her intrigue.",
+        "type":  "side",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_dlc_revelation",
+        "title":  "The Madonna of Sasau",
+        "desc":  "I stopped by to see Johanka and find out how she\u0027s getting on. She confided in me that she\u0027s been having strange dreams in which the Virgin Mary appears to her.",
+        "type":  "side",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_dlc_revelation_henry",
+        "title":  "The Wicket Gate",
+        "desc":  "Johanka tells me there\u0027s just one more sinner who needs saving - me! So I have to set out on a pilgrimage of repentance to Uzhitz, pray to the Virgin Mary and ask God for forgiveness.",
+        "type":  "side",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_gamblersDen",
+        "title":  "Game of Throws",
+        "desc":  "The bold Sir Hans Capon inherited a lovely necklace from his great-grandmother... which he lost at dice. And now he wants it back again. That sounds simple enough... right?",
+        "type":  "side",
+        "region":  "Amorous Adventures"
+    },
+    {
+        "name":  "q_loveLetter",
+        "title":  "Honeyed Words",
+        "desc":  "Young Lord Capon is in love. Again! And again he wants me to help him win the heart of the maiden in question.",
+        "type":  "side",
+        "region":  "Amorous Adventures"
+    },
+    {
+        "name":  "q_superstition",
+        "title":  "No Rest for the Wicked",
+        "desc":  "After leaving Sasau in a hurry, the charlatan has been trying his luck in Ledetchko, but with little success. The people there are quite content and in no need of his dubious remedies. But that could all change...",
+        "type":  "side",
+        "region":  "Amorous Adventures"
+    },
+    {
+        "name":  "q_rides_trap",
+        "title":  "A Tight Spot",
+        "desc":  "We rode out on patrol, this time towards Sasau. Someone there saw and unfamiliar company of horsemen, which is something we should definitely investigate. ",
+        "type":  "side",
+        "region":  "Band of Bastards"
+    },
+    {
+        "name":  "q_rides_message",
+        "title":  "Bad Blood",
+        "desc":  "I set out with Kuno and his band on our first patrol of the province. I was very curious indeed what trouble I might have to face - whether from marauding brigands or from the lawkeepers themselves! ",
+        "type":  "side",
+        "region":  "Band of Bastards"
+    },
+    {
+        "name":  "q_rides",
+        "title":  "Band of Bastards",
+        "desc":  "Sir Radzig has asked for my help again. He charged a mercenary, one Sir Kuno of Rychwald, and his band with patrolling the province and keeping order. I\u0027m to act as a guide for the mercenaries and, since they themselves are a little hard to distinguish from brigands, to keep their appetite for trouble in check.",
+        "type":  "side",
+        "region":  "Band of Bastards"
+    },
+    {
+        "name":  "q_rides_prologue",
+        "title":  "Desperate Measures",
+        "desc":  "",
+        "type":  "side",
+        "region":  "Band of Bastards"
+    },
+    {
+        "name":  "q_rides_traitor",
+        "title":  "Thirty Pieces",
+        "desc":  "Kuno sent me to deal with the treacherous Jakey. He doesn\u0027t much care how I do it, just as long as I find out as much as possible about Hagen\u0027s plans.",
+        "type":  "side",
+        "region":  "Band of Bastards"
+    },
+    {
+        "name":  "q_rides_feast",
+        "title":  "Uninvited Guests",
+        "desc":  "We set out on another patrol around the province. Hagen Zoul will surely still be doing everything he can to provoke Sir Radzig, so we need to keep our eyes peeled. As night fell, we approached Uzhitz, where we\u0027d decided to spend the night at the inn. But then we heard a cry for help from a windmill.",
+        "type":  "side",
+        "region":  "Band of Bastards"
+    },
+    {
+        "name":  "q_rides_battle",
+        "title":  "What Price Honour?",
+        "desc":  "I know where Hagen is going to be and what he\u0027s planning. Now the question is, how to deal with it? There will be no end to the chaos as long as Hagen is obsessed with his insane feud with Sir Radzig.",
+        "type":  "side",
+        "region":  "Band of Bastards"
+    },
+    {
+        "name":  "q_disguise",
+        "title":  "Masquerade",
+        "desc":  "Fritz and Matthew have hatched a plan, which usually means lots of fun... and lots of mischief.",
+        "type":  "side",
+        "region":  "Crossroads"
+    },
+    {
+        "name":  "q_dlc_homes",
+        "title":  "A Place to Call Home",
+        "desc":  "In reward for my services, Sir Divish appointed me Bailiff of Pribyslavitz. It\u0027s a great honour, but for now I\u0027m only in charge of some ruins, so I\u0027ll have to rebuild the place into a thriving hamlet.",
+        "type":  "side",
+        "region":  "From the Ashes"
+    },
+    {
+        "name":  "q_dlc_newhomes_kolikator",
+        "title":  "Lost in the Woods",
+        "desc":  "There\u0027s been talk that Sir Divish has grand plans for the ruined village of Pribyslavitz now the bandits have been driven out. And his plans started to involve me when he sent me on a quest to find a missing man he\u0027d sent there.",
+        "type":  "side",
+        "region":  "From the Ashes"
+    },
+    {
+        "name":  "q_dlc_newhomes_resources",
+        "title":  "Supplies",
+        "desc":  "Lots of raw materials and other supplies will be needed to rebuild the village of Pribyslavitz.",
+        "type":  "side",
+        "region":  "From the Ashes"
+    },
+    {
+        "name":  "q_dlc_newhomes_judgement",
+        "title":  "The Scales of Justice",
+        "desc":  "Neighbourly disputes in Pribyslavitz.",
+        "type":  "side",
+        "region":  "From the Ashes"
+    },
+    {
+        "name":  "q_e3_2017_combat",
+        "title":  "Fight!",
+        "desc":  "They\u0027re out to get you - kill them all!",
+        "type":  "side",
+        "region":  "Ledetchko"
+    },
+    {
+        "name":  "q_cemetery_flowers",
+        "title":  "Restless Spirit",
+        "desc":  "The herb woman asked me to help Drahomira, the butcher woman from Ledetchko who is at her wits\u0027 end. She claims the ghost of her dead neighbour has been haunting her at night and she can\u0027t get a wink of sleep.",
+        "type":  "side",
+        "region":  "Ledetchko"
+    },
+    {
+        "name":  "q_secret_of_steel",
+        "title":  "Tricks of the Trade",
+        "desc":  "There\u0027s talk that the Sasau blacksmith uses magic charms when tempering steel and his counterpart in Ledetchko would like to know if there’s any truth in it.",
+        "type":  "side",
+        "region":  "Ledetchko"
+    },
+    {
+        "name":  "q_plagueInMerhojed",
+        "title":  "Pestilence ",
+        "desc":  "The hamlet of Merhojed has been stricken by a mysterious scourge that first infected the animals and now the villagers. ",
+        "type":  "side",
+        "region":  "Merhojed"
+    },
+    {
+        "name":  "q_wounded_soul",
+        "title":  "In God\u0027s Hands",
+        "desc":  "I met Johanka at the monastery, and it looks like she\u0027s having trouble...",
+        "type":  "side",
+        "region":  "Monastery"
+    },
+    {
+        "name":  "q_sazavaMonastery",
+        "title":  "In the Cloister",
+        "desc":  "My name is Brother Gregor and I\u0027m a monk in Sasau Monastery. What would Pa have said about that? Most likely he\u0027d piss himself laughing… God rest his soul… Anyway, in order not to draw attention to myself, I must dress like a monk, speak like a monk, and behave like a monk.",
+        "type":  "side",
+        "region":  "Monastery"
+    },
+    {
+        "name":  "q_libri_prohibiti",
+        "title":  "Libri Prohibiti",
+        "desc":  "In the monastery library there is a cabinet containing forbidden books, locked away from prying eyes. And among them is the very book that Brother Nevlas thinks could describe a remedy to cure the ailing Abbot Peter. Why should such a book be banned? Well, the medicinal arts are not always compatible with the Divine Plan, besides which, the author was an infidel!",
+        "type":  "side",
+        "region":  "Monastery"
+    },
+    {
+        "name":  "q_licentious_monks",
+        "title":  "Nasty Habits",
+        "desc":  "Someone is sneaking into the cellars at night to drink wine. I\u0027m pretty sure that\u0027s against the monastery rules!",
+        "type":  "side",
+        "region":  "Monastery"
+    },
+    {
+        "name":  "q_urbans_bone",
+        "title":  "Saintly Remains",
+        "desc":  "Urban would like to touch the remains of Saint Procopius, but in local monastery monks do not allow him to do so.",
+        "type":  "side",
+        "region":  "Monastery"
+    },
+    {
+        "name":  "q_torn_book",
+        "title":  "Scattered Pages",
+        "desc":  "It seems someone tore pages from an old book and hid them around the monastery. We a little effort, it should be possible to put it all back together.",
+        "type":  "side",
+        "region":  "Monastery"
+    },
+    {
+        "name":  "q_abbots_list",
+        "title":  "The Abbot\u0027s List",
+        "desc":  "In the Abbot\u0027s study, now serving as the Prior\u0027s chambers, there should be documents with information about the other novices that might offer leads in the search for Pious.",
+        "type":  "side",
+        "region":  "Monastery"
+    },
+    {
+        "name":  "q_church_construction",
+        "title":  "The House of God",
+        "desc":  "There\u0027s been an accident at the Sasau Monastery construction works due to bad quality stone. The Talmberg Quarry Master is worried the affair will damage his good name.",
+        "type":  "side",
+        "region":  "Monastery"
+    },
+    {
+        "name":  "q_bullied_novice",
+        "title":  "The Trials of a Novice",
+        "desc":  "Novice Lucas has asked me to help solve his problem with the Brother Circators. They\u0027ve been picking on him and making his life a misery.",
+        "type":  "side",
+        "region":  "Monastery"
+    },
+    {
+        "name":  "q_herbalistone",
+        "title":  "Weeds",
+        "desc":  "Brother Nicodemus asked me to weed his patch. ",
+        "type":  "side",
+        "region":  "Monastery"
+    },
+    {
+        "name":  "q_monastery_treasure",
+        "title":  "Worldly Goods",
+        "desc":  "I found an interesting secret stash in the monastery. ",
+        "type":  "side",
+        "region":  "Monastery"
+    },
+    {
+        "name":  "q_colliers",
+        "title":  "Besmirched",
+        "desc":  "Someone was snooping around the ruins of Skalitz, looting whatever they could find of value. Someone ought to look into it. And of course stealing from a thief is no great sin...",
+        "type":  "side",
+        "region":  "Neuhof"
+    },
+    {
+        "name":  "q_RacingAndBetting",
+        "title":  "The Sport of Kings",
+        "desc":  "The Lord of Talmberg has stopped buying his horses from the Neuhof stud farm. Coming in the wake of the recent brutal raid on the farm, during which several horses were slaughtered, this is a severe blow for Widow Zora, who lost her husband, Smil the chief groom, in the attack and is struggling to keep the stud running. She has asked me if I would put in a word for her with Sir Divish of Talmberg.",
+        "type":  "side",
+        "region":  "Neuhof"
+    },
+    {
+        "name":  "q_nightingales",
+        "title":  "A Bird in the Hand...",
+        "desc":  "Three of the Rattay Huntsman’s precious nightingales have flown off into the woods somewhere. I\u0027m not exactly an ardent ornithologist - I\u0027m more used to chasing bandits and thieves in the woods. But variety is the spice of life... ",
+        "type":  "side",
+        "region":  "Rattay"
+    },
+    {
+        "name":  "q_watercarrier",
+        "title":  "Aquarius",
+        "desc":  "The Rattay Bailiff has work to offer some of the Skalitz refugees - carrying water and emptying latrines. He wants me to find out which of them are most needy and suitable for the job. ",
+        "type":  "side",
+        "region":  "Rattay"
+    },
+    {
+        "name":  "q_raubritter_cloth",
+        "title":  "Clothes Make the Man",
+        "desc":  "Sir Hanush has sent for me and Lord Capon. As Sir Hans\u0027 page, I should dress as well as I can for an audience like that. Fortunately, he was kind enough to let me have some of his cast-offs, which are still finer than anything I\u0027ve ever worn!",
+        "type":  "side",
+        "region":  "Rattay"
+    },
+    {
+        "name":  "q_millerDate",
+        "title":  "Courtship ",
+        "desc":  "Theresa, Miller Peshek\u0027s niece, is a good friend of mine from Skalitz. I\u0027ve known her since we were children, and we’ve been through a lot together.",
+        "type":  "side",
+        "region":  "Rattay"
+    },
+    {
+        "name":  "q_questItems",
+        "title":  "Lost and Found",
+        "desc":  "It appears you left some important things in the hands of a corpse! The gravedigger has disposed of the body and safely stored away the departed\u0027s worldly goods at the Rattay Presbytery, where you can pick them up.",
+        "type":  "side",
+        "region":  "Rattay"
+    },
+    {
+        "name":  "q_capCum",
+        "title":  "Lost in Translation",
+        "desc":  "Some millhands in Budin have captured a Cuman raider. From what I\u0027ve heard, none of them knows quite what to do with the captive.",
+        "type":  "side",
+        "region":  "Rattay"
+    },
+    {
+        "name":  "q_execExec",
+        "title":  "Money for Old Rope",
+        "desc":  "There\u0027s to be an execution in Rattay - without Hermann, the Rattay Executioner.",
+        "type":  "side",
+        "region":  "Rattay"
+    },
+    {
+        "name":  "q_visitInBaths",
+        "title":  "Next to Godliness ",
+        "desc":  "In which I go to the baths to see Lord Capon, and what befalls us there.",
+        "type":  "side",
+        "region":  "Rattay"
+    },
+    {
+        "name":  "q_troubleCorpse",
+        "title":  "No Rest for the Wicked",
+        "desc":  "Miller Woyzeck is dead. Everyone is convinced he took his own life, so he can\u0027t be buried in consecrated ground. Peshek wants me to arrange for a proper burial in the cemetery. There\u0027s no need to mention it won\u0027t be so easy…",
+        "type":  "side",
+        "region":  "Rattay"
+    },
+    {
+        "name":  "q_raubritter",
+        "title":  "Robber Baron   ",
+        "desc":  "It\u0027s not unusual for family quarrels to get blown out of proportion, though they usually end with nothing worse than bruised feelings. Not so in the case of Captain Bernard\u0027s kin! Two of his cousins are feuding so fiercely that one is lying seriously wounded in Rattay and the other is pillaging farms around Neuhof with his band of renegades. Sir Hanush has sent me and Lord Capon on a punitive expedition to deal with the robber baron. Captain Bernard will naturally be leading the corps himself.",
+        "type":  "side",
+        "region":  "Rattay"
+    },
+    {
+        "name":  "q_debtor",
+        "title":  "Scavenger",
+        "desc":  "There\u0027s talk that there\u0027s still treasure to be found in Skalitz...",
+        "type":  "side",
+        "region":  "Rattay"
+    },
+    {
+        "name":  "q_package",
+        "title":  "The Good Thief",
+        "desc":  "Miller Peshek and his niece, Theresa, took care of me while I was at death\u0027s door. I owe them my life.",
+        "type":  "side",
+        "region":  "Rattay"
+    },
+    {
+        "name":  "q_execIntro",
+        "title":  "Tough Love",
+        "desc":  "Hermann the Executioner is trying to help the widow Elishka. Only living with an executioner brings all sorts of problems.",
+        "type":  "side",
+        "region":  "Rattay"
+    },
+    {
+        "name":  "q_usurersGirl",
+        "title":  "Usurer\u0027s daughter",
+        "desc":  "Miller Woyzeck needs my help with a very delicate situation. He wants me to help get rid of his mistress\u0027s unborn child. Is that really something I want to do?",
+        "type":  "side",
+        "region":  "Rattay Baths"
+    },
+    {
+        "name":  "q_sikBas",
+        "title":  "Sick Bastard",
+        "desc":  "Samopesh farmer Josef is suffering from serious gastric problems and claims the blame lies with local innkeeper Marianna, who he says serves spoiled food and drink.",
+        "type":  "side",
+        "region":  "Samopesh"
+    },
+    {
+        "name":  "q_friendinneed2",
+        "title":  "...Is a Friend Indeed",
+        "desc":  "I got Fritz and Matthew a new job at a mill. Now it\u0027s time to find out how they\u0027re getting on.",
+        "type":  "side",
+        "region":  "Sasau"
+    },
+    {
+        "name":  "q_expensiveScuffle",
+        "title":  "A Costly Brawl",
+        "desc":  "The monastery wants Fritz and Matthew to pay for treatment? That doesn\u0027t seem right to me.",
+        "type":  "side",
+        "region":  "Sasau"
+    },
+    {
+        "name":  "q_friendInNeed",
+        "title":  "A Friend In Need...",
+        "desc":  "I met my old mates Fritz and Matthew. And as usual they\u0027re in a pickle.",
+        "type":  "side",
+        "region":  "Sasau"
+    },
+    {
+        "name":  "q_abductedWoman",
+        "title":  "Damsel in Distress",
+        "desc":  "Every little boy dreams of becoming a knight in shining armour and rescuing a princess from a tower. I never thought that dream would come true for me... well, sort of. I\u0027m not a knight, it\u0027s not a princess I have to rescue, but a bathhouse wench, and she\u0027s not locked away in a tower, but on top of a hill.",
+        "type":  "side",
+        "region":  "Sasau"
+    },
+    {
+        "name":  "q_avalonSteel",
+        "title":  "Foreign Steel",
+        "desc":  "The blacksmith yearns to make a sword the King himself would be proud of.",
+        "type":  "side",
+        "region":  "Sasau"
+    },
+    {
+        "name":  "q_inVinoVeritas",
+        "title":  "in vino veritas",
+        "desc":  "in vino veritas ddd",
+        "type":  "side",
+        "region":  "Sasau"
+    },
+    {
+        "name":  "q_lastWill",
+        "title":  "Last Will and Testament",
+        "desc":  "Everyone deals with the approach of death in their own way. Some look for God\u0027s forgiveness, others try to do right by their loved ones, others to set their worldly affairs in order.",
+        "type":  "side",
+        "region":  "Sasau"
+    },
+    {
+        "name":  "q_charlatan",
+        "title":  "Miracles While You Wait",
+        "desc":  "On my travels I\u0027ve met all sorts of peculiar folk, but none to compare with the Sasau charlatan. Magic of all colours and shades, relics, elixirs and talismans - all these miraculous things you can get from him. At a price. Naturally, like all traders, he has to stock up now and again, and that, it seems, is where I come in.",
+        "type":  "side",
+        "region":  "Sasau"
+    },
+    {
+        "name":  "q_newHerbarium",
+        "title":  "New Herbarium",
+        "desc":  "Brother Nicodemus asked me to help him with putting together a new herbarium. ",
+        "type":  "side",
+        "region":  "Sasau"
+    },
+    {
+        "name":  "q_smithBattle",
+        "title":  "Rattled ",
+        "desc":  "Master Armourer Ota Rabstein refuses to sell his forge to the Sasau blacksmith, Zach. Zach\u0027s so furious that he decides to humiliate Ota in front of the whole town. If he can\u0027t have Ota\u0027s forge, he\u0027ll at least take his customers.",
+        "type":  "side",
+        "region":  "Sasau"
+    },
+    {
+        "name":  "q_minesExploration",
+        "title":  "The King\u0027s Silver",
+        "desc":  "The Skalitz mineworks are standing idle, still damaged by the Cuman raid. It’s time to assess the state they\u0027re in and start the job of getting them back up and running, if possible…",
+        "type":  "side",
+        "region":  "Skalitz"
+    },
+    {
+        "name":  "q_stone",
+        "title":  "A Rock and a Hard Place",
+        "desc":  "Matthew and Fritz want to raid the quarry in Talmberg. It looks dangerous, but if we\u0027re successful we\u0027ll be rich!",
+        "type":  "side",
+        "region":  "Talmberg"
+    },
+    {
+        "name":  "q_flirtTalmberk",
+        "title":  "At Your Service, My Lady",
+        "desc":  "Stephanie from Talmberg wants an unforgettable wedding for her cousin Sophie.",
+        "type":  "side",
+        "region":  "Talmberg"
+    },
+    {
+        "name":  "q_zajicsTrap",
+        "title":  "Cherchez la Femme",
+        "desc":  "I promised Hanekin Hare I\u0027d help him. This aristocrat, outlaw and poacher hasn\u0027t had the last word yet. I don\u0027t know what he has in mind, but I expect the Master Huntsman and his wife will play leading roles in his plan.",
+        "type":  "side",
+        "region":  "Talmberg"
+    },
+    {
+        "name":  "q_ironRation",
+        "title":  "Emergency Supply",
+        "desc":  "Hanekin Hare\u0027s band of poachers isn\u0027t as merry as it was. They were attacked by the Talmberg soldiers and Hanekin had to hide out in a mine shaft with a handful of his faithful followers. But one of them, Black Lukesh, has lost the faith and plans to desert Hare. He doesn\u0027t want to go empty-handed though, especially since he has something put away for a rainy day at his house. Only his house is being watched by the soldiers.",
+        "type":  "side",
+        "region":  "Talmberg"
+    },
+    {
+        "name":  "q_gallowsBrothers",
+        "title":  "Gallows Brothers",
+        "desc":  "All my life I’ve been asking myself one thing: “Who to pin the blame on?\"",
+        "type":  "side",
+        "region":  "Talmberg"
+    },
+    {
+        "name":  "q_hareHunt",
+        "title":  "Hare Hunt",
+        "desc":  "The Talmberg Huntsman Nicholas Angel asked me to help him track down some poachers who’ve been plundering the Talmberg woods recently.",
+        "type":  "side",
+        "region":  "Talmberg"
+    },
+    {
+        "name":  "q_lambInWolfskin",
+        "title":  "Sheep in Wolf\u0027s Clothing",
+        "desc":  "They say forbidden fruit tastes the sweetest, and that goes double for poached game. Maybe that\u0027s one of the reasons I\u0027m tempted to join the gang of poachers that\u0027s hiding out in the Talmberg woods. On the other hand, I might just want to infiltrate them to find out what they\u0027re really up to. Because it looks like they\u0027re after more than just game.",
+        "type":  "side",
+        "region":  "Talmberg"
+    },
+    {
+        "name":  "q_race_talmberk",
+        "title":  "Talmberg Horse Race",
+        "desc":  "The glorious Talmberg Ribbon Race.",
+        "type":  "side",
+        "region":  "Talmberg"
+    },
+    {
+        "name":  "q_tournament_ptacek",
+        "title":  "Capon\u0027s Champion",
+        "desc":  "Sir Hans wants me to enrol in the Rattay Tourney.",
+        "type":  "side",
+        "region":  "Tournament"
+    },
+    {
+        "name":  "q_tournament_smith",
+        "title":  "Dead Men Tell No Tales",
+        "desc":  "Svatopluk, the Samopesh blacksmith\u0027s son, died under very suspicious circumstances after winning the Rattay Tourney some years ago.",
+        "type":  "side",
+        "region":  "Tournament"
+    },
+    {
+        "name":  "q_tournament_smithClosure",
+        "title":  "Dead Men Tell No Tales - End",
+        "desc":  "Svatopluk, the Samopesh blacksmith\u0027s son, died under very suspicious circumstances after winning the Rattay Tourney some years ago.",
+        "type":  "side",
+        "region":  "Tournament"
+    },
+    {
+        "name":  "q_godsWays",
+        "title":  "A Man of the Cloth",
+        "desc":  "The hamlet of Rovna is deserted - that is, but for one sole farmer. The others were either killed by Sigismund\u0027s marauders or fled to Rattay. St. James\u0027 Church is also abandoned, and until they have a spiritual shepherd to reassure them, the surviving villagers won\u0027t be returning.",
+        "type":  "side",
+        "region":  "Uzhitz"
+    },
+    {
+        "name":  "q_bodyOfChrist",
+        "title":  "Corpus Christi",
+        "desc":  "The poisoned cow is about to die and who else but I can save it?",
+        "type":  "side",
+        "region":  "Uzhitz"
+    },
+    {
+        "name":  "q_hangover",
+        "title":  "Divine Retribution",
+        "desc":  "",
+        "type":  "side",
+        "region":  "Uzhitz"
+    },
+    {
+        "name":  "q_learnToRead",
+        "title":  "Mightier than the Sword",
+        "desc":  "They say the pen is mightier than the sword. Maybe it\u0027s time I learned to read.",
+        "type":  "side",
+        "region":  "Uzhitz"
+    },
+    {
+        "name":  "q_devilplay",
+        "title":  "Playing with the Devil",
+        "desc":  "Three village wenches in Uzhitz want to use a magic ointment, risking their lives and immortal souls. ",
+        "type":  "side",
+        "region":  "Uzhitz"
+    },
+    {
+        "name":  "q_horse_on_the_run",
+        "title":  "The Horse That Bolted",
+        "desc":  "The Uzhitz stables have lost a horse. More precisely their fastest stallion, Pie, has run off. The Head Groom asked me to find Pie and bring him back to the stables.",
+        "type":  "side",
+        "region":  "Uzhitz"
+    },
+    {
+        "name":  "q_waldensians",
+        "title":  "Waldensians",
+        "desc":  "Uzhitz has an uninvited guest - the Archbishop’s Vicar. He claims to be here to hunt down a group of heretics in the area. But Sir Hanush is of a different opinion. He thinks the Vicar has come here in order to snoop around his own estate. This is why Sir Hanush wants to see him off back to Prague. ",
+        "type":  "side",
+        "region":  "Uzhitz"
+    },
+    {
+        "name":  "q_whoseCow",
+        "title":  "Whose Cow",
+        "desc":  "",
+        "type":  "side",
+        "region":  "Uzhitz"
+    }
+]

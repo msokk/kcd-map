@@ -54,3 +54,144 @@
 .leaflet-tooltip-top.live-player-tooltip:before {
   border-top-color: #8a6a3a;
 }
+
+/* Quest journal tab icon (the in-game journal shield) */
+.quests {
+  background-image: url('/kcd-map/assets/images/quest.png');
+}
+
+/* 1.5x sidebar tab rail (base is 40px in leaflet-sidebar.css) */
+.sidebar.collapsed {
+  width: 60px;
+}
+.sidebar-tabs,
+.sidebar-tabs > ul {
+  width: 60px;
+}
+.sidebar-tabs > li,
+.sidebar-tabs > ul > li {
+  height: 60px;
+}
+.sidebar-tabs > li > a,
+.sidebar-tabs > ul > li > a {
+  line-height: 60px;
+}
+.sidebar-tabs i {
+  width: 60px;
+  height: 60px;
+  background-size: 60px;
+}
+.sidebar-left .sidebar-content {
+  left: 60px;
+}
+@media (min-width: 768px) {
+  .sidebar-left.collapsed ~ .sidebar-map .leaflet-left {
+    left: 70px;
+  }
+}
+
+/* Quest journal pane */
+.quest-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0 2px;
+}
+.quest-total {
+  font-family: 'MedievalSharpBook';
+  font-weight: bold;
+  font-size: 13px;
+  color: #4c2900;
+}
+.quest-hide-done {
+  font-family: arial;
+  font-size: 12px;
+  color: #4c2900;
+  cursor: pointer;
+  user-select: none;
+}
+.quest-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: #d39e35;
+  margin: 14px -15px 6px -15px;
+  padding: 3px 15px;
+  font-family: 'MedievalSharpBook';
+  font-size: 16px;
+  color: #3a2c14;
+}
+.quest-count {
+  font-size: 12px;
+  font-family: arial;
+  font-weight: bold;
+}
+.quest-region-header {
+  font-family: 'MedievalSharpBook';
+  color: #8a6a3a;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px 0 2px;
+}
+.quest-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.quest-item {
+  padding: 3px 0;
+  border-bottom: 1px dotted rgba(138, 106, 58, 0.35);
+}
+.quest-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.quest-check {
+  display: none;
+}
+.quest-box {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #8a6a3a;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  flex: 0 0 auto;
+  position: relative;
+}
+.quest-check:checked + .quest-box {
+  background: #4e9006;
+  border-color: #2f5405;
+}
+.quest-check:checked + .quest-box:after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 0;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.quest-title {
+  font-family: 'MedievalSharpBook';
+  font-weight: bold;
+  font-size: 14px;
+  color: #4c2900;
+  cursor: pointer;
+  flex: 1;
+}
+.quest-item.done .quest-title {
+  text-decoration: line-through;
+  opacity: 0.55;
+}
+.quest-desc {
+  font-family: arial;
+  font-size: 12px;
+  font-style: italic;
+  color: #5c4623;
+  margin: 4px 0 6px 24px;
+}

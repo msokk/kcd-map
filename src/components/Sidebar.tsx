@@ -2,8 +2,9 @@ import { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { CATEGORIES } from '../lib/categories';
 import { APP_VERSION, BASE } from '../lib/constants';
+import QuestsPanel from './QuestsPanel';
 
-type Tab = 'home' | 'share' | 'about' | 'backup';
+type Tab = 'home' | 'quests' | 'share' | 'backup';
 
 interface Props {
   visible: Set<string>;
@@ -44,7 +45,7 @@ export default function Sidebar({
     <div id="sidebar" className={`sidebar sidebar-left leaflet-touch${collapsed ? ' collapsed' : ''}`}>
       <div className="sidebar-tabs">
         <ul role="tablist">
-          {(['home', 'share', 'about', 'backup'] as Tab[]).map((tab) => (
+          {(['home', 'quests', 'backup', 'share'] as Tab[]).map((tab) => (
             <li key={tab} className={active === tab ? 'active' : ''}>
               <a
                 href={`#${tab}`}
@@ -123,7 +124,15 @@ export default function Sidebar({
           </div>
         </div>
 
-        {/* Share */}
+        {/* Quests */}
+        <div className={`sidebar-pane${active === 'quests' ? ' active' : ''}`} id="quests">
+          <span className="sidebar-close" onClick={() => setActive(null)}>
+            <i className="left-arrow" />
+          </span>
+          <QuestsPanel />
+        </div>
+
+        {/* Share + changelog */}
         <div className={`sidebar-pane${active === 'share' ? ' active' : ''}`} id="share">
           <span className="sidebar-close" onClick={() => setActive(null)}>
             <i className="left-arrow" />
@@ -145,6 +154,46 @@ export default function Sidebar({
             >
               <img className="discord-img" src={`${IMG}reddit.svg`} alt="Reddit Kingdom Come Map" />
             </a>
+          </div>
+          <h3 className="list-title">{t('info')}</h3>
+          <div className="content update">
+            <h3>Update 2.0</h3>
+            <span className="updateday">Rebuilt UI</span>
+            <ul className="update-list">
+              <li className="text">Rebuilt on a modern stack (Vite + React + TypeScript + Leaflet).</li>
+              <li className="text">Same map, markers, and look as the original.</li>
+            </ul>
+            <h3>Update 1.3.1</h3>
+            <ul className="update-list">
+              <li className="text">Added shareable markers; every marker has a direct link.</li>
+              <li className="text">Markers shared with you can be added to your own markers.</li>
+            </ul>
+            <h3>Update 1.3</h3>
+            <ul className="update-list">
+              <li className="text">Map resolution increased to 8192px; coordinates match in-game.</li>
+              <li className="text">Export/import and clear options for your own markers.</li>
+            </ul>
+            <h3>Initial release 1.0</h3>
+            <ul className="update-list">
+              <li className="text">
+                Place markers around the map; they are saved in your browser&apos;s local storage.
+              </li>
+            </ul>
+            <div className="legalinfo">
+              <p className="text creator">Kingdom Come: Deliverance Map</p>
+              <p className="text creator">Originally created by RogerHN.</p>
+              <p className="text">
+                The{' '}
+                <a className="link" href="https://www.kingdomcomerpg.com" target="_blank" rel="noreferrer">
+                  Kingdom Come: Deliverance
+                </a>{' '}
+                logo, icons and map are copyright and property of{' '}
+                <a className="link" href="https://warhorsestudios.cz/" target="_blank" rel="noreferrer">
+                  Warhorse Studios
+                </a>
+                .
+              </p>
+            </div>
           </div>
         </div>
 
@@ -215,52 +264,6 @@ export default function Sidebar({
           </div>
         </div>
 
-        {/* About */}
-        <div className={`sidebar-pane${active === 'about' ? ' active' : ''}`} id="about">
-          <span className="sidebar-close" onClick={() => setActive(null)}>
-            <i className="left-arrow" />
-          </span>
-          <h3 className="list-title">{t('info')}</h3>
-          <div className="content update">
-            <h3>Update 2.0</h3>
-            <span className="updateday">Rebuilt UI</span>
-            <ul className="update-list">
-              <li className="text">Rebuilt on a modern stack (Vite + React + TypeScript + Leaflet).</li>
-              <li className="text">Same map, markers, and look as the original.</li>
-            </ul>
-            <h3>Update 1.3.1</h3>
-            <ul className="update-list">
-              <li className="text">Added shareable markers; every marker has a direct link.</li>
-              <li className="text">Markers shared with you can be added to your own markers.</li>
-            </ul>
-            <h3>Update 1.3</h3>
-            <ul className="update-list">
-              <li className="text">Map resolution increased to 8192px; coordinates match in-game.</li>
-              <li className="text">Export/import and clear options for your own markers.</li>
-            </ul>
-            <h3>Initial release 1.0</h3>
-            <ul className="update-list">
-              <li className="text">
-                Place markers around the map; they are saved in your browser&apos;s local storage.
-              </li>
-            </ul>
-            <div className="legalinfo">
-              <p className="text creator">Kingdom Come: Deliverance Map</p>
-              <p className="text creator">Originally created by RogerHN.</p>
-              <p className="text">
-                The{' '}
-                <a className="link" href="https://www.kingdomcomerpg.com" target="_blank" rel="noreferrer">
-                  Kingdom Come: Deliverance
-                </a>{' '}
-                logo, icons and map are copyright and property of{' '}
-                <a className="link" href="https://warhorsestudios.cz/" target="_blank" rel="noreferrer">
-                  Warhorse Studios
-                </a>
-                .
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
