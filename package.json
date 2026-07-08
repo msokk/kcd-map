@@ -10,8 +10,8 @@
     "preview": "vite preview",
     "convert-data": "node scripts/convert-data.mjs",
     "typecheck": "tsc --noEmit",
-    "app:build": "vite build --outDir dist-app --emptyOutDir && deno compile --no-npm --node-modules-dir=none --no-terminal --icon app/icon.ico --allow-read --allow-write --allow-net --allow-run --allow-env --include dist-app --output kcd-live-map.exe app/main.ts",
-    "app:run": "deno run --allow-read --allow-write --allow-net --allow-run --allow-env app/main.ts"
+    "app:build": "vite build --outDir dist-app --emptyOutDir && deno compile --no-npm --node-modules-dir=none --no-terminal --icon app/icon.ico --allow-read --allow-write --allow-net --allow-run --allow-env --allow-ffi --include dist-app --include app/server_worker.ts --output kcd-live-map.exe app/main.ts",
+    "app:run": "deno run --allow-read --allow-write --allow-net --allow-run --allow-env --allow-ffi app/main.ts"
   },
   "dependencies": {
     "i18next": "^26.3.0",
