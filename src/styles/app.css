@@ -90,6 +90,53 @@
   }
 }
 
+/* The base sidebar widths assume a 40px rail; grow them by the extra 20px
+   and let panes size to the available width so the scrollbar no longer
+   overlaps content (min-width forced panes wider than the content area). */
+.sidebar-pane {
+  min-width: 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar {
+    width: 325px;
+  }
+  .sidebar-left ~ .sidebar-map .leaflet-left {
+    left: 335px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sidebar {
+    width: 410px;
+  }
+  .sidebar-left ~ .sidebar-map .leaflet-left {
+    left: 420px;
+  }
+}
+@media (min-width: 1200px) {
+  .sidebar {
+    width: 480px;
+  }
+  .sidebar-left ~ .sidebar-map .leaflet-left {
+    left: 490px;
+  }
+}
+.sidebar.collapsed {
+  width: 60px;
+}
+
+/* Slim parchment scrollbar for the sidebar */
+.sidebar-content::-webkit-scrollbar {
+  width: 10px;
+}
+.sidebar-content::-webkit-scrollbar-track {
+  background: rgba(138, 106, 58, 0.15);
+}
+.sidebar-content::-webkit-scrollbar-thumb {
+  background: #8a6a3a;
+  border-radius: 5px;
+  border: 2px solid #d5c4a1;
+}
+
 /* Quest journal pane */
 .quest-toolbar {
   display: flex;

@@ -76,8 +76,27 @@ function Get-DlcName($questName) {
 
 $includeGroups = @('Main', 'DLC', 'Race', 'Side-Activity') + ($regionMap.Keys | Where-Object { $_ -like 'Side-*' })
 
+# Cut content: fully designed in the tables (objectives, dialog topics and
+# journal text all exist) but never wired into the world, so no data-level
+# flag distinguishes them - the difference only exists in level placement
+# and recorded audio. Matched by journal title against the community list:
+# https://kingdom-come-deliverance.fandom.com/wiki/Unimplemented_quests
+$cutQuests = @(
+    'q_sikBas'          # Sick Bastard
+    'q_whoseCow'        # Whose Cow
+    'q_bodyOfChrist'    # Corpus Christi
+    'q_inVinoVeritas'   # In Vino Veritas
+    'q_avalonSteel'     # Foreign Steel
+    'q_hangover'        # Divine Retribution
+    'q_usurersGirl'     # Usurer's Daughter
+    'q_troubleCorpse'   # No Rest for the Wicked
+    'q_superstition'    # No Rest for the Wicked (duplicate title, also cut)
+    'q_e3_2017_combat'  # Fight! (E3 2017 demo)
+)
+
 $quests = foreach ($row in $questXml.database.table.rows.row) {
     if ($includeGroups -notcontains $row.group) { continue }
+    if ($cutQuests -contains $row.quest_name) { continue }
     if (-not $q2sub.ContainsKey($row.quest_id)) { continue }
     $sub = $q2sub[$row.quest_id].sub
     if (-not ($subName.ContainsKey($sub) -and $loc.ContainsKey($subName[$sub]))) { continue }

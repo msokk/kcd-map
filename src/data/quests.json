@@ -504,13 +504,6 @@
         "region":  "Amorous Adventures"
     },
     {
-        "name":  "q_superstition",
-        "title":  "No Rest for the Wicked",
-        "desc":  "After leaving Sasau in a hurry, the charlatan has been trying his luck in Ledetchko, but with little success. The people there are quite content and in no need of his dubious remedies. But that could all change...",
-        "type":  "side",
-        "region":  "Amorous Adventures"
-    },
-    {
         "name":  "q_rides_trap",
         "title":  "A Tight Spot",
         "desc":  "We rode out on patrol, this time towards Sasau. Someone there saw and unfamiliar company of horsemen, which is something we should definitely investigate. ",
@@ -593,13 +586,6 @@
         "desc":  "Neighbourly disputes in Pribyslavitz.",
         "type":  "side",
         "region":  "From the Ashes"
-    },
-    {
-        "name":  "q_e3_2017_combat",
-        "title":  "Fight!",
-        "desc":  "They\u0027re out to get you - kill them all!",
-        "type":  "side",
-        "region":  "Ledetchko"
     },
     {
         "name":  "q_cemetery_flowers",
@@ -770,13 +756,6 @@
         "region":  "Rattay"
     },
     {
-        "name":  "q_troubleCorpse",
-        "title":  "No Rest for the Wicked",
-        "desc":  "Miller Woyzeck is dead. Everyone is convinced he took his own life, so he can\u0027t be buried in consecrated ground. Peshek wants me to arrange for a proper burial in the cemetery. There\u0027s no need to mention it won\u0027t be so easy…",
-        "type":  "side",
-        "region":  "Rattay"
-    },
-    {
         "name":  "q_raubritter",
         "title":  "Robber Baron   ",
         "desc":  "It\u0027s not unusual for family quarrels to get blown out of proportion, though they usually end with nothing worse than bruised feelings. Not so in the case of Captain Bernard\u0027s kin! Two of his cousins are feuding so fiercely that one is lying seriously wounded in Rattay and the other is pillaging farms around Neuhof with his band of renegades. Sir Hanush has sent me and Lord Capon on a punitive expedition to deal with the robber baron. Captain Bernard will naturally be leading the corps himself.",
@@ -805,20 +784,6 @@
         "region":  "Rattay"
     },
     {
-        "name":  "q_usurersGirl",
-        "title":  "Usurer\u0027s daughter",
-        "desc":  "Miller Woyzeck needs my help with a very delicate situation. He wants me to help get rid of his mistress\u0027s unborn child. Is that really something I want to do?",
-        "type":  "side",
-        "region":  "Rattay Baths"
-    },
-    {
-        "name":  "q_sikBas",
-        "title":  "Sick Bastard",
-        "desc":  "Samopesh farmer Josef is suffering from serious gastric problems and claims the blame lies with local innkeeper Marianna, who he says serves spoiled food and drink.",
-        "type":  "side",
-        "region":  "Samopesh"
-    },
-    {
         "name":  "q_friendinneed2",
         "title":  "...Is a Friend Indeed",
         "desc":  "I got Fritz and Matthew a new job at a mill. Now it\u0027s time to find out how they\u0027re getting on.",
@@ -843,20 +808,6 @@
         "name":  "q_abductedWoman",
         "title":  "Damsel in Distress",
         "desc":  "Every little boy dreams of becoming a knight in shining armour and rescuing a princess from a tower. I never thought that dream would come true for me... well, sort of. I\u0027m not a knight, it\u0027s not a princess I have to rescue, but a bathhouse wench, and she\u0027s not locked away in a tower, but on top of a hill.",
-        "type":  "side",
-        "region":  "Sasau"
-    },
-    {
-        "name":  "q_avalonSteel",
-        "title":  "Foreign Steel",
-        "desc":  "The blacksmith yearns to make a sword the King himself would be proud of.",
-        "type":  "side",
-        "region":  "Sasau"
-    },
-    {
-        "name":  "q_inVinoVeritas",
-        "title":  "in vino veritas",
-        "desc":  "in vino veritas ddd",
         "type":  "side",
         "region":  "Sasau"
     },
@@ -980,20 +931,6 @@
         "region":  "Uzhitz"
     },
     {
-        "name":  "q_bodyOfChrist",
-        "title":  "Corpus Christi",
-        "desc":  "The poisoned cow is about to die and who else but I can save it?",
-        "type":  "side",
-        "region":  "Uzhitz"
-    },
-    {
-        "name":  "q_hangover",
-        "title":  "Divine Retribution",
-        "desc":  "",
-        "type":  "side",
-        "region":  "Uzhitz"
-    },
-    {
         "name":  "q_learnToRead",
         "title":  "Mightier than the Sword",
         "desc":  "They say the pen is mightier than the sword. Maybe it\u0027s time I learned to read.",
@@ -1018,13 +955,6 @@
         "name":  "q_waldensians",
         "title":  "Waldensians",
         "desc":  "Uzhitz has an uninvited guest - the Archbishop’s Vicar. He claims to be here to hunt down a group of heretics in the area. But Sir Hanush is of a different opinion. He thinks the Vicar has come here in order to snoop around his own estate. This is why Sir Hanush wants to see him off back to Prague. ",
-        "type":  "side",
-        "region":  "Uzhitz"
-    },
-    {
-        "name":  "q_whoseCow",
-        "title":  "Whose Cow",
-        "desc":  "",
         "type":  "side",
         "region":  "Uzhitz"
     }
