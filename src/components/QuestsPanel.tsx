@@ -1,10 +1,12 @@
 import { useMemo, useState } from 'react';
 import questsData from '../data/quests.json';
+import timedQuests from '../data/timedQuests.json';
 import { usePersistedState } from '../hooks/usePersistedState';
 
 // Quest checklist: all quests extracted from the game files (see
 // scripts/extract-quests.ps1), completion ticked off manually and kept in
-// localStorage. No save-game integration yet.
+// localStorage. No save-game integration yet. Timed-quest annotations in
+// timedQuests.json are community-sourced.
 
 interface Quest {
   name: string;
@@ -99,6 +101,17 @@ export default function QuestsPanel() {
                             >
                               {q.title}
                             </span>
+                            {(timedQuests as Record<string, string>)[q.name] && (
+                              <span
+                                className="quest-timed"
+                                data-reason={(timedQuests as Record<string, string>)[q.name]}
+                              >
+                                <svg width="14" height="14" viewBox="0 0 24 24">
+                                  <circle cx="12" cy="12" r="10" fill="none" stroke="#8a3a2a" strokeWidth="2.5" />
+                                  <path d="M12 6 v6 l4 3" fill="none" stroke="#8a3a2a" strokeWidth="2.5" strokeLinecap="round" />
+                                </svg>
+                              </span>
+                            )}
                           </div>
                           {expanded === q.name && q.desc && <p className="quest-desc">{q.desc}</p>}
                         </li>

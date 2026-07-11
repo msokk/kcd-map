@@ -242,3 +242,34 @@
   color: #5c4623;
   margin: 4px 0 6px 24px;
 }
+
+/* Timed quest clock + hover tooltip */
+.quest-timed {
+  position: relative;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  cursor: help;
+  margin-right: 4px;
+}
+.quest-timed svg {
+  display: block;
+}
+.quest-timed:hover::after {
+  content: attr(data-reason);
+  position: absolute;
+  right: 0;
+  bottom: 130%;
+  z-index: 10;
+  width: max-content;
+  max-width: 240px;
+  padding: 4px 9px;
+  font-family: arial;
+  font-size: 12px;
+  font-style: normal;
+  color: #f4e4c1;
+  background-color: rgba(46, 33, 20, 0.95);
+  border: 1px solid #8a6a3a;
+  border-radius: 3px;
+  white-space: normal;
+}
