@@ -108,7 +108,8 @@ $quests = foreach ($row in $questXml.database.table.rows.row) {
     # type_id 1 marks main-quest mechanics, but a few regional side quests
     # carry it too (q_bodyOfChrist, q_killCow) - trust the group for those.
     $type = 'side'
-    if ($row.quest_type_id -eq '1' -and $row.group -in @('Main', 'DLC')) { $type = 'main' }
+    if ($row.group -eq 'DLC') { $type = 'dlc' }
+    elseif ($row.quest_type_id -eq '1' -and $row.group -eq 'Main') { $type = 'main' }
     elseif ($row.quest_type_id -eq '3' -or $row.group -eq 'Side-Activity') { $type = 'activity' }
 
     $region = if ($row.group -eq 'DLC') { Get-DlcName $row.quest_name }

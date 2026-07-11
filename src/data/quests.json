@@ -126,13 +126,6 @@
         "region":  "Activity"
     },
     {
-        "name":  "q_rides_bacchus",
-        "title":  "The Ring of Bacchus",
-        "desc":  "There\u0027s an interesting game that Kuno\u0027s men play to pass the time. There\u0027s a ring that goes around between them, called the Ring of Bacchus. Whoever has it when they\u0027re at the tavern can drink and eat his fill at Kuno\u0027s expense. The ring is a highly coveted item in the camp, so I thought I\u0027d join the game too.",
-        "type":  "activity",
-        "region":  "Band of Bastards"
-    },
-    {
         "name":  "q_floatingArchery",
         "title":  "Chumps on the River",
         "desc":  "I met an interesting fellow. He’s an archer by the name of Vatzek and he told me about this game. It’s called “Chumps” and is about hitting logs floating down the river.",
@@ -168,46 +161,235 @@
         "region":  "Uzhitz"
     },
     {
+        "name":  "q_theresa_henryLevel",
+        "title":  "A Woman\u0027s lot",
+        "desc":  "When Henry asked Theresa what happened to her and her family in Skalitz, she started telling him a long, sad story...",
+        "type":  "dlc",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
         "name":  "q_theresa_return",
         "title":  "Aftermath",
         "desc":  "Samuel died during the night and now I\u0027m left alone in the world but for Tinker. Has anyone else survived at all? Skalitz is smouldering and it looks like the army has moved on.",
-        "type":  "main",
+        "type":  "dlc",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_theresa_survivors",
+        "title":  "Angel of Mercy",
+        "desc":  "I came across a survivor and decided to help others to escape too. No one else should be allowed to die! Tinker will help with my search.",
+        "type":  "dlc",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_dlc_revelation_treasure",
+        "title":  "Bonum Commune",
+        "desc":  "The repentant sinner Pavel of Kolin wanted to recover his hidden treasure and donate it to a good cause in Sasau. I decided to help him.",
+        "type":  "dlc",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_dlc_revelation_gambler",
+        "title":  "Casting Lots",
+        "desc":  "Johanka wanted me to help the Sasau tailor\u0027s wife by getting her husband to stop playing dice.",
+        "type":  "dlc",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_theresa_blanka",
+        "title":  "Cry Wolf!",
+        "desc":  "Bianca wants to brew something special for Henry and she needs to pick herbs in the woods for it. The trouble is, people are saying a wolf was seen in the woods recently...",
+        "type":  "dlc",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_dlc_revelation_adela",
+        "title":  "Go, and Sin No More",
+        "desc":  "Johanka sent me to Ledetchko to find a sinful bath wench and redeem her.",
+        "type":  "dlc",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_dlc_revelation_murderer",
+        "title":  "Infernal Dream",
+        "desc":  "I talked to Johanka at the infirmary in Sasau Monastery. She\u0027s quite exhausted - apart from having to care for the sick and wounded with little help from anyone, she said she\u0027s also been troubled by a repeated nightmare about some cave in the hills above Skalitz. I promised her I\u0027d find this cave and have a look inside.",
+        "type":  "dlc",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_theresa_johanka",
+        "title":  "Matchmaker",
+        "desc":  "Johanka wants Matthias to take her dancing, but she\u0027s too shy to ask him. So, she thought up an elaborate plan to prompt him... and I\u0027m to play a major role in her intrigue.",
+        "type":  "dlc",
         "region":  "A Woman\u0027s Lot"
     },
     {
         "name":  "q_theresa_village",
         "title":  "Ordinary Routine",
         "desc":  "Village life is no fairy-tale. You have to be on your feet from dawn till dusk.",
-        "type":  "main",
+        "type":  "dlc",
         "region":  "A Woman\u0027s Lot"
     },
     {
         "name":  "q_theresa_silver",
         "title":  "The Family Silver",
         "desc":  "A pair of Skalitz guards were at the mill asking about silver going missing from the mines. Pa looked like he was very worried, though he tried to cover it up.",
-        "type":  "main",
+        "type":  "dlc",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_dlc_revelation",
+        "title":  "The Madonna of Sasau",
+        "desc":  "I stopped by to see Johanka and find out how she\u0027s getting on. She confided in me that she\u0027s been having strange dreams in which the Virgin Mary appears to her.",
+        "type":  "dlc",
+        "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_dlc_revelation_henry",
+        "title":  "The Wicket Gate",
+        "desc":  "Johanka tells me there\u0027s just one more sinner who needs saving - me! So I have to set out on a pilgrimage of repentance to Uzhitz, pray to the Virgin Mary and ask God for forgiveness.",
+        "type":  "dlc",
         "region":  "A Woman\u0027s Lot"
     },
     {
         "name":  "q_theresa_escape",
         "title":  "Thicker than Water",
         "desc":  "Skalitz is under attack! Pa and Stibor were killed in front of my eyes, Zbyshek fled like a coward and left me to the mercy of the raiders. I managed to get away, but I\u0027m not out of danger yet. And neither is my little brother, Samuel, who works in the mines.",
-        "type":  "main",
+        "type":  "dlc",
         "region":  "A Woman\u0027s Lot"
     },
     {
         "name":  "q_theresa_brother",
         "title":  "Ties that Bind",
         "desc":  "My brother is dying. I must find some way to save him, otherwise he won\u0027t survive till morning. And I\u0027ll have to be very careful, because all hell has broken loose outside...",
-        "type":  "main",
+        "type":  "dlc",
         "region":  "A Woman\u0027s Lot"
     },
     {
         "name":  "q_theresa_nails",
         "title":  "Unexpected Visit",
         "desc":  "Yesterday\u0027s chores were anything but routine. Let\u0027s hope it\u0027s quieter today.",
-        "type":  "main",
+        "type":  "dlc",
         "region":  "A Woman\u0027s Lot"
+    },
+    {
+        "name":  "q_gamblersDen",
+        "title":  "Game of Throws",
+        "desc":  "The bold Sir Hans Capon inherited a lovely necklace from his great-grandmother... which he lost at dice. And now he wants it back again. That sounds simple enough... right?",
+        "type":  "dlc",
+        "region":  "Amorous Adventures"
+    },
+    {
+        "name":  "q_loveLetter",
+        "title":  "Honeyed Words",
+        "desc":  "Young Lord Capon is in love. Again! And again he wants me to help him win the heart of the maiden in question.",
+        "type":  "dlc",
+        "region":  "Amorous Adventures"
+    },
+    {
+        "name":  "q_rides_trap",
+        "title":  "A Tight Spot",
+        "desc":  "We rode out on patrol, this time towards Sasau. Someone there saw and unfamiliar company of horsemen, which is something we should definitely investigate. ",
+        "type":  "dlc",
+        "region":  "Band of Bastards"
+    },
+    {
+        "name":  "q_rides_message",
+        "title":  "Bad Blood",
+        "desc":  "I set out with Kuno and his band on our first patrol of the province. I was very curious indeed what trouble I might have to face - whether from marauding brigands or from the lawkeepers themselves! ",
+        "type":  "dlc",
+        "region":  "Band of Bastards"
+    },
+    {
+        "name":  "q_rides",
+        "title":  "Band of Bastards",
+        "desc":  "Sir Radzig has asked for my help again. He charged a mercenary, one Sir Kuno of Rychwald, and his band with patrolling the province and keeping order. I\u0027m to act as a guide for the mercenaries and, since they themselves are a little hard to distinguish from brigands, to keep their appetite for trouble in check.",
+        "type":  "dlc",
+        "region":  "Band of Bastards"
+    },
+    {
+        "name":  "q_rides_prologue",
+        "title":  "Desperate Measures",
+        "desc":  "",
+        "type":  "dlc",
+        "region":  "Band of Bastards"
+    },
+    {
+        "name":  "q_rides_bacchus",
+        "title":  "The Ring of Bacchus",
+        "desc":  "There\u0027s an interesting game that Kuno\u0027s men play to pass the time. There\u0027s a ring that goes around between them, called the Ring of Bacchus. Whoever has it when they\u0027re at the tavern can drink and eat his fill at Kuno\u0027s expense. The ring is a highly coveted item in the camp, so I thought I\u0027d join the game too.",
+        "type":  "dlc",
+        "region":  "Band of Bastards"
+    },
+    {
+        "name":  "q_rides_traitor",
+        "title":  "Thirty Pieces",
+        "desc":  "Kuno sent me to deal with the treacherous Jakey. He doesn\u0027t much care how I do it, just as long as I find out as much as possible about Hagen\u0027s plans.",
+        "type":  "dlc",
+        "region":  "Band of Bastards"
+    },
+    {
+        "name":  "q_rides_feast",
+        "title":  "Uninvited Guests",
+        "desc":  "We set out on another patrol around the province. Hagen Zoul will surely still be doing everything he can to provoke Sir Radzig, so we need to keep our eyes peeled. As night fell, we approached Uzhitz, where we\u0027d decided to spend the night at the inn. But then we heard a cry for help from a windmill.",
+        "type":  "dlc",
+        "region":  "Band of Bastards"
+    },
+    {
+        "name":  "q_rides_battle",
+        "title":  "What Price Honour?",
+        "desc":  "I know where Hagen is going to be and what he\u0027s planning. Now the question is, how to deal with it? There will be no end to the chaos as long as Hagen is obsessed with his insane feud with Sir Radzig.",
+        "type":  "dlc",
+        "region":  "Band of Bastards"
+    },
+    {
+        "name":  "q_dlc_homes",
+        "title":  "A Place to Call Home",
+        "desc":  "In reward for my services, Sir Divish appointed me Bailiff of Pribyslavitz. It\u0027s a great honour, but for now I\u0027m only in charge of some ruins, so I\u0027ll have to rebuild the place into a thriving hamlet.",
+        "type":  "dlc",
+        "region":  "From the Ashes"
+    },
+    {
+        "name":  "q_dlc_newhomes_kolikator",
+        "title":  "Lost in the Woods",
+        "desc":  "There\u0027s been talk that Sir Divish has grand plans for the ruined village of Pribyslavitz now the bandits have been driven out. And his plans started to involve me when he sent me on a quest to find a missing man he\u0027d sent there.",
+        "type":  "dlc",
+        "region":  "From the Ashes"
+    },
+    {
+        "name":  "q_dlc_newhomes_resources",
+        "title":  "Supplies",
+        "desc":  "Lots of raw materials and other supplies will be needed to rebuild the village of Pribyslavitz.",
+        "type":  "dlc",
+        "region":  "From the Ashes"
+    },
+    {
+        "name":  "q_dlc_newhomes_judgement",
+        "title":  "The Scales of Justice",
+        "desc":  "Neighbourly disputes in Pribyslavitz.",
+        "type":  "dlc",
+        "region":  "From the Ashes"
+    },
+    {
+        "name":  "q_tournament_ptacek",
+        "title":  "Capon\u0027s Champion",
+        "desc":  "Sir Hans wants me to enrol in the Rattay Tourney.",
+        "type":  "dlc",
+        "region":  "Tournament"
+    },
+    {
+        "name":  "q_tournament_smith",
+        "title":  "Dead Men Tell No Tales",
+        "desc":  "Svatopluk, the Samopesh blacksmith\u0027s son, died under very suspicious circumstances after winning the Rattay Tourney some years ago.",
+        "type":  "dlc",
+        "region":  "Tournament"
+    },
+    {
+        "name":  "q_tournament_smithClosure",
+        "title":  "Dead Men Tell No Tales - End",
+        "desc":  "Svatopluk, the Samopesh blacksmith\u0027s son, died under very suspicious circumstances after winning the Rattay Tourney some years ago.",
+        "type":  "dlc",
+        "region":  "Tournament"
     },
     {
         "name":  "q_searchForSaint",
@@ -420,172 +602,11 @@
         "region":  "Main story"
     },
     {
-        "name":  "q_theresa_henryLevel",
-        "title":  "A Woman\u0027s lot",
-        "desc":  "When Henry asked Theresa what happened to her and her family in Skalitz, she started telling him a long, sad story...",
-        "type":  "side",
-        "region":  "A Woman\u0027s Lot"
-    },
-    {
-        "name":  "q_theresa_survivors",
-        "title":  "Angel of Mercy",
-        "desc":  "I came across a survivor and decided to help others to escape too. No one else should be allowed to die! Tinker will help with my search.",
-        "type":  "side",
-        "region":  "A Woman\u0027s Lot"
-    },
-    {
-        "name":  "q_dlc_revelation_treasure",
-        "title":  "Bonum Commune",
-        "desc":  "The repentant sinner Pavel of Kolin wanted to recover his hidden treasure and donate it to a good cause in Sasau. I decided to help him.",
-        "type":  "side",
-        "region":  "A Woman\u0027s Lot"
-    },
-    {
-        "name":  "q_dlc_revelation_gambler",
-        "title":  "Casting Lots",
-        "desc":  "Johanka wanted me to help the Sasau tailor\u0027s wife by getting her husband to stop playing dice.",
-        "type":  "side",
-        "region":  "A Woman\u0027s Lot"
-    },
-    {
-        "name":  "q_theresa_blanka",
-        "title":  "Cry Wolf!",
-        "desc":  "Bianca wants to brew something special for Henry and she needs to pick herbs in the woods for it. The trouble is, people are saying a wolf was seen in the woods recently...",
-        "type":  "side",
-        "region":  "A Woman\u0027s Lot"
-    },
-    {
-        "name":  "q_dlc_revelation_adela",
-        "title":  "Go, and Sin No More",
-        "desc":  "Johanka sent me to Ledetchko to find a sinful bath wench and redeem her.",
-        "type":  "side",
-        "region":  "A Woman\u0027s Lot"
-    },
-    {
-        "name":  "q_dlc_revelation_murderer",
-        "title":  "Infernal Dream",
-        "desc":  "I talked to Johanka at the infirmary in Sasau Monastery. She\u0027s quite exhausted - apart from having to care for the sick and wounded with little help from anyone, she said she\u0027s also been troubled by a repeated nightmare about some cave in the hills above Skalitz. I promised her I\u0027d find this cave and have a look inside.",
-        "type":  "side",
-        "region":  "A Woman\u0027s Lot"
-    },
-    {
-        "name":  "q_theresa_johanka",
-        "title":  "Matchmaker",
-        "desc":  "Johanka wants Matthias to take her dancing, but she\u0027s too shy to ask him. So, she thought up an elaborate plan to prompt him... and I\u0027m to play a major role in her intrigue.",
-        "type":  "side",
-        "region":  "A Woman\u0027s Lot"
-    },
-    {
-        "name":  "q_dlc_revelation",
-        "title":  "The Madonna of Sasau",
-        "desc":  "I stopped by to see Johanka and find out how she\u0027s getting on. She confided in me that she\u0027s been having strange dreams in which the Virgin Mary appears to her.",
-        "type":  "side",
-        "region":  "A Woman\u0027s Lot"
-    },
-    {
-        "name":  "q_dlc_revelation_henry",
-        "title":  "The Wicket Gate",
-        "desc":  "Johanka tells me there\u0027s just one more sinner who needs saving - me! So I have to set out on a pilgrimage of repentance to Uzhitz, pray to the Virgin Mary and ask God for forgiveness.",
-        "type":  "side",
-        "region":  "A Woman\u0027s Lot"
-    },
-    {
-        "name":  "q_gamblersDen",
-        "title":  "Game of Throws",
-        "desc":  "The bold Sir Hans Capon inherited a lovely necklace from his great-grandmother... which he lost at dice. And now he wants it back again. That sounds simple enough... right?",
-        "type":  "side",
-        "region":  "Amorous Adventures"
-    },
-    {
-        "name":  "q_loveLetter",
-        "title":  "Honeyed Words",
-        "desc":  "Young Lord Capon is in love. Again! And again he wants me to help him win the heart of the maiden in question.",
-        "type":  "side",
-        "region":  "Amorous Adventures"
-    },
-    {
-        "name":  "q_rides_trap",
-        "title":  "A Tight Spot",
-        "desc":  "We rode out on patrol, this time towards Sasau. Someone there saw and unfamiliar company of horsemen, which is something we should definitely investigate. ",
-        "type":  "side",
-        "region":  "Band of Bastards"
-    },
-    {
-        "name":  "q_rides_message",
-        "title":  "Bad Blood",
-        "desc":  "I set out with Kuno and his band on our first patrol of the province. I was very curious indeed what trouble I might have to face - whether from marauding brigands or from the lawkeepers themselves! ",
-        "type":  "side",
-        "region":  "Band of Bastards"
-    },
-    {
-        "name":  "q_rides",
-        "title":  "Band of Bastards",
-        "desc":  "Sir Radzig has asked for my help again. He charged a mercenary, one Sir Kuno of Rychwald, and his band with patrolling the province and keeping order. I\u0027m to act as a guide for the mercenaries and, since they themselves are a little hard to distinguish from brigands, to keep their appetite for trouble in check.",
-        "type":  "side",
-        "region":  "Band of Bastards"
-    },
-    {
-        "name":  "q_rides_prologue",
-        "title":  "Desperate Measures",
-        "desc":  "",
-        "type":  "side",
-        "region":  "Band of Bastards"
-    },
-    {
-        "name":  "q_rides_traitor",
-        "title":  "Thirty Pieces",
-        "desc":  "Kuno sent me to deal with the treacherous Jakey. He doesn\u0027t much care how I do it, just as long as I find out as much as possible about Hagen\u0027s plans.",
-        "type":  "side",
-        "region":  "Band of Bastards"
-    },
-    {
-        "name":  "q_rides_feast",
-        "title":  "Uninvited Guests",
-        "desc":  "We set out on another patrol around the province. Hagen Zoul will surely still be doing everything he can to provoke Sir Radzig, so we need to keep our eyes peeled. As night fell, we approached Uzhitz, where we\u0027d decided to spend the night at the inn. But then we heard a cry for help from a windmill.",
-        "type":  "side",
-        "region":  "Band of Bastards"
-    },
-    {
-        "name":  "q_rides_battle",
-        "title":  "What Price Honour?",
-        "desc":  "I know where Hagen is going to be and what he\u0027s planning. Now the question is, how to deal with it? There will be no end to the chaos as long as Hagen is obsessed with his insane feud with Sir Radzig.",
-        "type":  "side",
-        "region":  "Band of Bastards"
-    },
-    {
         "name":  "q_disguise",
         "title":  "Masquerade",
         "desc":  "Fritz and Matthew have hatched a plan, which usually means lots of fun... and lots of mischief.",
         "type":  "side",
         "region":  "Crossroads"
-    },
-    {
-        "name":  "q_dlc_homes",
-        "title":  "A Place to Call Home",
-        "desc":  "In reward for my services, Sir Divish appointed me Bailiff of Pribyslavitz. It\u0027s a great honour, but for now I\u0027m only in charge of some ruins, so I\u0027ll have to rebuild the place into a thriving hamlet.",
-        "type":  "side",
-        "region":  "From the Ashes"
-    },
-    {
-        "name":  "q_dlc_newhomes_kolikator",
-        "title":  "Lost in the Woods",
-        "desc":  "There\u0027s been talk that Sir Divish has grand plans for the ruined village of Pribyslavitz now the bandits have been driven out. And his plans started to involve me when he sent me on a quest to find a missing man he\u0027d sent there.",
-        "type":  "side",
-        "region":  "From the Ashes"
-    },
-    {
-        "name":  "q_dlc_newhomes_resources",
-        "title":  "Supplies",
-        "desc":  "Lots of raw materials and other supplies will be needed to rebuild the village of Pribyslavitz.",
-        "type":  "side",
-        "region":  "From the Ashes"
-    },
-    {
-        "name":  "q_dlc_newhomes_judgement",
-        "title":  "The Scales of Justice",
-        "desc":  "Neighbourly disputes in Pribyslavitz.",
-        "type":  "side",
-        "region":  "From the Ashes"
     },
     {
         "name":  "q_cemetery_flowers",
@@ -901,27 +922,6 @@
         "desc":  "The glorious Talmberg Ribbon Race.",
         "type":  "side",
         "region":  "Talmberg"
-    },
-    {
-        "name":  "q_tournament_ptacek",
-        "title":  "Capon\u0027s Champion",
-        "desc":  "Sir Hans wants me to enrol in the Rattay Tourney.",
-        "type":  "side",
-        "region":  "Tournament"
-    },
-    {
-        "name":  "q_tournament_smith",
-        "title":  "Dead Men Tell No Tales",
-        "desc":  "Svatopluk, the Samopesh blacksmith\u0027s son, died under very suspicious circumstances after winning the Rattay Tourney some years ago.",
-        "type":  "side",
-        "region":  "Tournament"
-    },
-    {
-        "name":  "q_tournament_smithClosure",
-        "title":  "Dead Men Tell No Tales - End",
-        "desc":  "Svatopluk, the Samopesh blacksmith\u0027s son, died under very suspicious circumstances after winning the Rattay Tourney some years ago.",
-        "type":  "side",
-        "region":  "Tournament"
     },
     {
         "name":  "q_godsWays",

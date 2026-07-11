@@ -20,7 +20,18 @@ const SECTIONS = [
   { type: 'main', label: 'Main Quests' },
   { type: 'side', label: 'Side Quests' },
   { type: 'activity', label: 'Activities' },
+  { type: 'dlc', label: 'DLC Quests' },
 ] as const;
+
+// DLC subgroups in release order
+const DLC_ORDER = [
+  'Treasures of the Past',
+  'From the Ashes',
+  'Amorous Adventures',
+  'Tournament',
+  'Band of Bastards',
+  "A Woman's Lot",
+];
 
 export default function QuestsPanel() {
   const quests = questsData as Quest[];
@@ -43,6 +54,9 @@ export default function QuestsPanel() {
         const regions = [...new Set(list.map((q) => q.region))].sort((a, b) => {
           if (a === 'Main story') return -1;
           if (b === 'Main story') return 1;
+          const da = DLC_ORDER.indexOf(a);
+          const db = DLC_ORDER.indexOf(b);
+          if (da !== -1 && db !== -1) return da - db;
           return a.localeCompare(b);
         });
         return { ...s, list, regions };
