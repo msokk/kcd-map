@@ -54,34 +54,19 @@ function LiveMap.Arm()
 	Script.SetTimer(LiveMap.interval, tick)
 end
 
-function LiveMap:OnGameplayStarted(actionName, eventName, argTable)
-	System.LogAlways("[LIVEMAP] gameplay started, arming timer")
-	LiveMap.lastPos = nil
-	-- The engine can wipe script timers shortly after this event while the
-	-- level finishes loading. Re-arm at staggered delays so at least one arm
-	-- lands after the wipe; the gen counter keeps only the newest loop alive.
-	LiveMap.Arm()
-	Script.SetTimer(2000, function()
-		LiveMap.Arm()
-	end)
-	Script.SetTimer(10000, function()
-		System.LogAlways("[LIVEMAP] late re-arm, gen=" .. tostring(LiveMap.gen + 1))
-		LiveMap.Arm()
-	end)
+-- Primary heartbeat: the LiveMap UIAction flowgraph (Libs/UI/UIActions/
+-- livemap.xml) calls this once per second, starting on OnGameplayStarted.
+-- Flowgraph state lives in the engine, unlike Script.SetTimer timers which
+-- get wiped during save loads (which is why timer-based arming kept dying).
+function LiveMap.FgTick()
+	if not LiveMap.fgAlive then
+		LiveMap.fgAlive = true
+		System.LogAlways("[LIVEMAP] flowgraph heartbeat active")
+	end
+	pcall(LiveMap.Report)
 end
 
-local ok, err = pcall(function()
-	UIAction.RegisterEventSystemListener(LiveMap, "System", "OnGameplayStarted", "OnGameplayStarted")
-end)
-if ok then
-	System.LogAlways("[LIVEMAP] init: OnGameplayStarted listener registered")
-else
-	System.LogAlways("[LIVEMAP] init: listener registration failed (" .. tostring(err) .. ")")
-end
-
--- Belt and braces: arm once now (covers the case where the listener never
--- fires), and expose a console command to arm manually for debugging.
-LiveMap.Arm()
+-- Manual fallback for debugging: script-timer loop via console.
 pcall(function()
 	System.AddCCommand("livemap_arm", "LiveMap.Arm()", "Restart the LiveMap position timer")
 end)

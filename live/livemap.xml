@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Graph Group="LiveMap">
+  <Nodes>
+    <Node Id="1" Name="Gameplay_started_every_save_load" Class="UI:Events:System:OnGameplayStarted" pos="0,0,0" flags="0">
+      <Inputs Port="-1" Idx="" />
+    </Node>
+    <Node Id="2" Class="Time:Delay" pos="300,0,0" flags="0">
+      <Inputs delay="1" resetOnInput="1" unpausable="0" />
+    </Node>
+    <Node Id="3" Class="System:ExecuteScript" pos="600,0,0" flags="0">
+      <Inputs Script="if LiveMap and LiveMap.FgTick then LiveMap.FgTick() end" />
+    </Node>
+  </Nodes>
+  <Edges>
+    <Edge nodeIn="2" nodeOut="1" portIn="in" portOut="onEvent" enabled="1" />
+    <Edge nodeIn="3" nodeOut="2" portIn="Call" portOut="out" enabled="1" />
+    <Edge nodeIn="2" nodeOut="3" portIn="in" portOut="Success" enabled="1" />
+    <Edge nodeIn="2" nodeOut="3" portIn="in" portOut="Failed" enabled="1" />
+  </Edges>
+</Graph>

@@ -1,9 +1,15 @@
 # Live player tracking
 
-[livemap_tracker.lua](livemap_tracker.lua) is the master source for the game
-mod. To update the installed mod, zip it as `Scripts/Mods/livemap_tracker.lua`
+[livemap_tracker.lua](livemap_tracker.lua) and [livemap.xml](livemap.xml) are
+the master sources for the game mod. To update the installed mod, zip them as
+`Scripts/Mods/livemap_tracker.lua` and `Libs/UI/UIActions/livemap.xml`
 (forward slashes) and save the archive as
 `<KCD>\Mods\LiveMapTracker\Data\LiveMapTracker.pak` while the game is closed.
+
+The per-second heartbeat is the livemap.xml UI action flowgraph (Delay ->
+ExecuteScript loop started by OnGameplayStarted): flowgraph state lives in
+the engine, unlike Script.SetTimer timers, which the engine wipes during
+save loads — timer-based arming kept dying with the load screen.
 
 Shows Henry's live position on the map while KCD is running, via three pieces:
 
